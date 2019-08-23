@@ -1,9 +1,9 @@
 let money = 2000000,
-    income ="500000",
+    income = "500000",
     addExpenses = "30000,500000,600000",
-    deposit =true,
+    deposit = true,
     mission = 100000000000000,
-    period =1;
+    period = 1;
 
 //Вывести в консоль тип данных значений переменных money, income, deposit;
 console.log(typeof money);
@@ -14,20 +14,20 @@ console.log(typeof deposit);
 console.log(income.length);
 
 //Вывести в консоль “Период (period) месяцев” и “Цель заработать (mission) рублей/долларов/гривен/юани”
-console.log("Период "+period+" месяцев");
-console.log("Цель заработать "+mission+" рублей/долларов/гривен/юани");
+console.log("Период " + period + " месяцев");
+console.log("Цель заработать " + mission + " рублей/долларов/гривен/юани");
 
 //Привести строку addExpenses к нижнему регистру и разбить строку на массив, вывести массив в консоль
 console.log(addExpenses.toLowerCase().split(","));
 
 //Объявить переменную budgetDay и присвоить дневной бюджет (доход за месяц / 30), вывести в консоль результат и остаток        от деления
-let budgetDay =money/30;
+let budgetDay = money / 30;
 
 //Результат money/30 хранится в переменной budgetDay
 console.log(budgetDay);
 
 //остаток от деления
-console.log(money%30);
+console.log(money % 30);
 
 
 
