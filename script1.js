@@ -1,6 +1,6 @@
 let money = 2000000,
     income = "500000",
-    addExpenses = "30000,500000,600000",
+    addExpenses = "коммуналка, такси, интернет",
     deposit = true,
     mission = 100000000000000,
     period = 1;
@@ -18,7 +18,7 @@ console.log("Период " + period + " месяцев");
 console.log("Цель заработать " + mission + " рублей/долларов/гривен/юани");
 
 //Привести строку addExpenses к нижнему регистру и разбить строку на массив, вывести массив в консоль
-console.log(addExpenses.toLowerCase().split(","));
+console.log(addExpenses.toLowerCase().split(", "));
 
 //Объявить переменную budgetDay и присвоить дневной бюджет (доход за месяц / 30), вывести в консоль результат и остаток        от деления
 let budgetDay = money / 30;
