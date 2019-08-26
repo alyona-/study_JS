@@ -33,7 +33,7 @@ console.log(allDays[lang]);
 // если значение “Максим” то вывести в консоль “преподаватель”
 // , с любым другим значением вывести в консоль “студент”
 let namePerson = prompt("Как вас зовут?").trim();
-namePerson = namePerson[0].toUpperCase () + namePerson.substr (1).toLowerCase ();
+namePerson = namePerson[0].toUpperCase() + namePerson.substr(1).toLowerCase();
 (namePerson === "Артем") ? console.log("директор")
     : (namePerson === "Максим") ? console.log("преподаватель")
     : console.log("студент");
