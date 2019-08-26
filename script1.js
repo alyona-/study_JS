@@ -1,6 +1,6 @@
 let money = 2000000,
     income = "500000",
-    addExpenses = "коммуналка, такси, интернет",
+    addExpenses = "коммуналка, такси, интернет, еда, вода",
     deposit = true,
     mission = 100000000000000,
     period = 1;
