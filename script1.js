@@ -44,8 +44,8 @@ function getAccumulatedMonth(income, expenses) {
 let accumulatedMonth = getAccumulatedMonth(money, getExpensesMonth(question2, question4));
 
 //1. c. Функция getTargetMonth подсчитывает за какой период будет достигнута цель, зная результат месячного накопления
-function getTargetMonth(mission, budgetMonth) {
-    return Math.floor(mission / budgetMonth, 0);
+function getTargetMonth(mission, accumulatedMonth) {
+    return Math.floor(mission / accumulatedMonth, 0);
 }
 
 console.log("Накопления за период: ", accumulatedMonth);
@@ -53,7 +53,7 @@ console.log("Накопления за период: ", accumulatedMonth);
 let countMonth = getTargetMonth(mission, accumulatedMonth);
 console.log("Срок достижения цели в месяцах: ", countMonth);
 
-let budgetDay = Math.floor(budgetMonth / 30, 0);
+let budgetDay = Math.floor(accumulatedMonth / 30, 0);
 
 function getStatusIncome() {
     if (budgetDay >= 800) {
