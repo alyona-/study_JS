@@ -15,38 +15,51 @@ let money,
 
 start();
 
+let appData = {};
+appData.budget = money;
+appData.budgetDay = 0;
+appData.budgetMonth = 0;
+appData.expensesMonth = 0;
+
+
 // Возможные расходы за расчитываемый период записанные через запятую
 addExpenses = prompt("Перечислите возможные расходы за рассчитываемый период через запятую", "интернет, еда, вода")
     .replace(" ", "").split(",");
 console.log("addExpenses: ", addExpenses);
 
-let expenses1,
-    expenses2,
+let expenses1;
 
 //2) Добавить валидацию (проверку) на данные которые мы получаем на вопрос 'Во сколько это обойдется?’ в функции  getExpensesMonth
-    expensesMonth = function () {
-        let sum = 0;
-        for (let i = 0; i < 2; i++) {
-            if (i === 0) {
-                expenses1 = prompt("Введите обязательную статью расходов?", "Еда");
-            } else if (i === 1) {
-                expenses2 = prompt("Введите обязательную статью расходов?", "Вода");
-            }
-            let tmp;
-            do {
-                tmp = +prompt("Во сколько это обойдется ");
-                if (!((isNaN(tmp) || tmp == '' || tmp == null))) {
-                    sum += parseInt(tmp);
-                }
-            } while (isNaN(tmp) || tmp == '' || tmp == null);
+appData.getExpensesMonth =  function (){
+    appData.expenses = {};
+    for(let i =0; i < 2; i++ ){
+        if(i === 0) {
+            expenses = prompt("Введите обязательную статью расходов?", "food");
+        }else if(i === 1) {
+            expenses = prompt("Введите обязательную статью расходов?", "water");
         }
+        let tmp;
+        do {
+            tmp = +prompt("Во сколько это обойдется ");
+        }while(isNaN(tmp) || tmp =='' ||tmp==null);
+        appData.expenses[expenses]=tmp;
+    }
 
-        return sum;
-    };
+    for(key in appData.expenses) {
+        appData.expensesMonth+=appData.expenses[key];
+    }
+    return appData.expensesMonth;
+};
+
+
+
+
+
+
 
 // Депозит
 deposit = confirm("Есть ли у вас депозит в банке?");
-
+/*
 let showTypeof = function (item) {
     console.log('Type: ' + item, typeof item);
 };
@@ -54,7 +67,7 @@ let showTypeof = function (item) {
 //Вывести в консоль типы данных money, income, deposit
 showTypeof(money);
 showTypeof(income);
-showTypeof(deposit);
+showTypeof(deposit); */
 
 let expensesAmount = expensesMonth(),
 
@@ -62,26 +75,32 @@ let expensesAmount = expensesMonth(),
         return money - (expensesAmount);
     },
 
-    budgetPeriod = function () {
+    appData.budgetPeriod = function () {
         return money * period;
-    },
+    };
 
-    expensesPeriod = function () {
+    appData.expensesPeriod = function () {
         return expensesAmount * period;
-    },
+    };
 
-    incomePeriod = function () {
-        return budgetPeriod() - expensesPeriod();
-    },
+    appData.incomePeriod = function () {
+        return appData.budgetPeriod() - appData.expensesPeriod();
+    };
 
-    budgetDay = function () {
+    appData.budgetDay = function () {
         return Math.floor(accumulateMonth() / 30);
-    },
+    };
+
+    appData.getBudget =function () {
+    appData.budgetMonth =appData.budget -appData.expensesMonth;
+    appData.budgetDay = Math.floor(appData.budgetMonth/ 30);
+    return appData.budget -appData.expensesMonth;
+    };
 
 //1. c. Функция getTargetMonth подсчитывает за какой период будет достигнута цель, зная результат месячного накопления
-    getTargetMonth = function () {
+    appData.getTargetMonth = function () {
         return Math.ceil(mission / accumulateMonth());
-    },
+    };
 
 //4) Если budgetDay отрицательное значение то вместо уровня дохода пусть выводится сообщение “Что то пошло не так”
     getStatusIncome = function () {
