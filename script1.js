@@ -80,7 +80,7 @@ let expensesAmount = expensesMonth(),
 
 //1. c. Функция getTargetMonth подсчитывает за какой период будет достигнута цель, зная результат месячного накопления
     getTargetMonth = function () {
-        return Math.ceil(mission / accumulatedMonth());
+        return Math.ceil(mission / accumulateMonth());
     },
 
 //4) Если budgetDay отрицательное значение то вместо уровня дохода пусть выводится сообщение “Что то пошло не так”
