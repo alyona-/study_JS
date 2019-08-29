@@ -1,4 +1,4 @@
-# study_JS lesson04
+# study_JS Логические задачи
 
-1. Задание 1 файл tasks1.html вызывает скрипт script1.js
-2. Задание 2 файл tasks2.html вызывает скрипт script2.js
+1. Задача 1 logic1.js
+2. Задача 2 logic2.js
