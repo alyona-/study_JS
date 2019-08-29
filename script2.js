@@ -6,8 +6,10 @@
 */
 
 function isString(arg1) {
+
+
     arg1 = arg1.trim();
-    if(!arg1){
+    if(!arg1.trim()  || !isNaN(arg1)){
         return "В функцию передана не строка";
     }else {
         if(arg1.length >30) {
