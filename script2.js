@@ -10,7 +10,6 @@ function isString(arg1) {
     if(!arg1 ){
         return "В функцию передана не строка";
     }else {
-        arg1 = arg1.trim();
         if(arg1.length >30) {
             return arg1.substring(0,30).concat("...");
         }else {
