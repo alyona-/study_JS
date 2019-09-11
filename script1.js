@@ -1,7 +1,4 @@
 let money,
-    income = "500000",
-    addExpenses,
-    deposit,
     mission = 200000,
     period = 1,
 
@@ -18,6 +15,10 @@ appData.budget = money;
 appData.budgetDay = 0;
 appData.budgetMonth = 0;
 appData.expensesMonth = 0;
+appData.incomeMonth = 0;
+appData.income = {};
+appData.depositYear = 0;
+appData.deposit = {};
 
 let expenses;
 appData.getExpensesMonth = function () {
@@ -25,19 +26,38 @@ appData.getExpensesMonth = function () {
     return appData.expensesMonth;
 };
 
+let question, tmpName, tmpValue;
+appData.getIncome = function () {
+    question = validBoolean("Есть ли у вас дополнительный заработок?");
+    tmpName = validString("Откуда у вас дополнительный заработок?", "freelance");
+    tmpValue = validNumber("Сколько денег?", 100000);
+    appData.income[tmpName] = parseInt(tmpValue);
+    appData.incomeMonth = appData.income[tmpName];
+};
+
+appData.getIncome();
+
+appData.getDeposit = function () {
+    question = validBoolean("Есть ли у вас депозит в банке?");
+    tmpName = validString("Какой тариф депозита", " VIP");
+    tmpValue = validNumber("Сумма на счету", 10000);
+    appData.deposit[tmpName] = parseInt(tmpValue);
+    appData.depositYear = Math.floor((appData.deposit[tmpName] * 0.5 * 365) / (365 * 100));
+};
+
+appData.getDeposit();
+
 appData.asking = function () {
     let sum = 0;
     appData.expenses = {};
     for (let i = 0; i < 2; i++) {
         if (i === 0) {
-            expenses = prompt("Введите обязательную статью расходов?", "food");
+            expenses = validString("Введите обязательную статью расходов?", "food");
         } else if (i === 1) {
-            expenses = prompt("Введите обязательную статью расходов?", "water");
+            expenses = validString("Введите обязательную статью расходов?", "water");
         }
         let tmp;
-        do {
-            tmp = +prompt("Во сколько это обойдется ");
-        } while (isNaN(tmp) || tmp == '' || tmp == null);
+        tmp = validNumber("Во сколько это обойдется", 5000);
         appData.expenses[expenses] = tmp;
     }
 
@@ -77,7 +97,6 @@ appData.accumulateMonth = function () {
 let budgetPeriod = function () {
     return appData.budget * period;
 };
-
 let expensesPeriod = function () {
     return expensesAmount * period;
 };
@@ -103,3 +122,46 @@ for (key in appData) {
     console.log(i + ". appData." + key + " = " + appData[key]);
     i++;
 }
+
+function validBoolean(ask) {
+    let boolAsk;
+    do {
+        boolAsk = confirm(ask);
+    } while (boolAsk !== true);
+    return boolAsk;
+}
+
+function validString(ask, tmpStr) {
+    let str;
+    do {
+        str = prompt(ask, tmpStr);
+    } while (isNaN(str) === false || str == '' || str == null);
+
+    return str;
+}
+
+function validNumber(ask, tmpValue) {
+    let value;
+    do {
+        value = +prompt(ask, tmpValue);
+    } while (isNaN(value) === true || value == '' || value == null);
+    return value;
+}
+
+function validExpenses(q, tmpValue) {
+    let arr,
+        result;
+    do {
+        arr = prompt(q, tmpValue).replace(" ", "").split(",");
+        result = arr.filter(arrNum => isNaN(arrNum) === false);
+
+    } while (arr.length != result.length || result.length == 0 || arr == '' || arr == null);
+    return arr;
+}
+
+console.log(Object.entries(appData.expenses)
+    .map(item => item[0])
+    .join(" ")
+    .split(/\s+/).map(arr => arr[0].toUpperCase() + arr.substring(1))
+    .join(', ')
+);
