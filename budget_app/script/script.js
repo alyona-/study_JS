@@ -182,6 +182,14 @@ let appData = {
 
     calcPeriod: function () {
         return appData.budgetMonth * appData.period;
+    },
+
+    validateName: function (c) {
+        return false;
+    },
+
+    validateSum: function (c) {
+        return c;
     }
 };
 start.addEventListener('click', appData.start);
@@ -198,5 +206,7 @@ if (appData.getTargetMonth() > 0) {
 } else {
     console.log("Цель не будет достигнута");
 }
+
+document.querySelectorAll('input').
 
 console.log(appData.getStatusIncome());
