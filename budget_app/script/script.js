@@ -25,7 +25,8 @@ let start = document.getElementById("start"),
     additionalExpensesItem = document.querySelector('.additional_expenses-item'),
     targetAmount = document.querySelector('.target-amount'),
     incomeItem = document.querySelectorAll('.income-items'),
-    dataInputItems = document.querySelectorAll('.data input');
+    dataInputItems = document.querySelectorAll('.data input'),
+    calcBlock = document.querySelector('.calc');
 
 let appData = {
     budget: 0,
@@ -62,10 +63,8 @@ let appData = {
         dataInputItems.forEach(function (item) {
             item.disabled = true;
         });
-
         start.style.display = 'none';
         cancel.style.display = 'block';
-
     },
     showResult: function () {
         appData.period = +periodSelect.value;
@@ -109,9 +108,7 @@ let appData = {
             if (itemExpenses !== '' && cashExpenses !== '') {
                 appData.expenses[itemExpenses] = cashExpenses;
             }
-
         });
-
     },
     getIncome: function () {
         incomeItem.forEach(function (item) {
@@ -170,7 +167,6 @@ let appData = {
         } else {
             return "Что-то пошло не так";
         }
-
     },
     getMission: function () {
         if (isNaN(targetAmount.value) || targetAmount.value === '' || targetAmount.value == null) {
@@ -179,17 +175,8 @@ let appData = {
             appData.mission = targetAmount.value;
         }
     },
-
     calcPeriod: function () {
         return appData.budgetMonth * appData.period;
-    },
-
-    validateName: function (c) {
-        return false;
-    },
-
-    validateSum: function (c) {
-        return c;
     }
 };
 start.addEventListener('click', appData.start);
@@ -198,7 +185,18 @@ incomePlus.addEventListener('click', appData.addIncomeBlock);
 periodSelect.addEventListener('change', function (event) {
     periodAmount.textContent = event.target.value;
 }, false);
-
+calcBlock.addEventListener('keypress', function isValidText(e) {
+    let regexp;
+    if (e.target.getAttribute("placeholder") === "Наименование") {
+        regexp = /^[А-Яа-я]+$/;
+    } else if (e.target.getAttribute("placeholder") === "Сумма") {
+        regexp = /[\d]/;
+    }
+    if (!regexp.test(e.key)) {
+        e.preventDefault();
+        return false;
+    }
+});
 console.log("Расходы за месяц: " + appData.expensesMonth);
 
 if (appData.getTargetMonth() > 0) {
@@ -206,7 +204,4 @@ if (appData.getTargetMonth() > 0) {
 } else {
     console.log("Цель не будет достигнута");
 }
-
-document.querySelectorAll('input').
-
 console.log(appData.getStatusIncome());
