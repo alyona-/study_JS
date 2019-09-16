@@ -1,7 +1,10 @@
-# study_JS lesson09
-**1. Обязательное задание:**
+# study_JS 
 
-  
-    
-       файл **_budget_app/index.html_** вызывает скрипт **_budget_app/script/script.js_**
+1. 
+https://codepen.io/alyona-the-sasster/pen/RwbBzvE
+
+2.
+
+
+3.
 
