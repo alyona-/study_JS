@@ -149,7 +149,7 @@ let appData = {
             let cashExpenses = item.querySelector('.expenses-amount').value;
             if (itemExpenses !== '' && cashExpenses !== '') {
                 appData.expenses[itemExpenses] = parseInt(cashExpenses);
-                appData.expensesMonth+=parseInt(cashExpenses);
+                appData.expensesMonth += parseInt(cashExpenses);
             }
         });
     },
@@ -160,7 +160,7 @@ let appData = {
             let cashIncome = item.querySelector('.income-amount').value;
             if (itemIncome !== '' && cashIncome !== '') {
                 appData.income[itemIncome] = cashIncome;
-                appData.incomeMonth+=parseInt(cashIncome);
+                appData.incomeMonth += parseInt(cashIncome);
             }
         });
     },
