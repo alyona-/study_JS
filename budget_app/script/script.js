@@ -1,6 +1,5 @@
 'use strict';
 
-
 let start = document.getElementById("start"),
     cancel = document.getElementById("cancel"),
     btnPlus = document.getElementsByTagName("button"),
@@ -29,7 +28,6 @@ let start = document.getElementById("start"),
     dataInputItems = document.querySelectorAll('.data input'),
     mainItems = document.querySelectorAll('.main input'),
     calcBlock = document.querySelector('.calc');
-
 
 let appData = {
     budget: 0,
