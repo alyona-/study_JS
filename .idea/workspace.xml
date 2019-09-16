@@ -2,19 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0cf64f3c-1ede-4219-89ed-8ee0d9480e6c" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/zadanie01/z1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zadanie01/z1.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zadanie02/z2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zadanie02/z2.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zadanie03/z3.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zadanie03/z3.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/budget_app/css/style.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/budget_app/font/Roboto-Bold.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/budget_app/font/Roboto-Bold.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/budget_app/img/arrow.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/budget_app/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/budget_app/script/script.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zadanie02/z2.js" beforeDir="false" afterPath="$PROJECT_DIR$/zadanie02/z2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zadanie03/z3.html" beforeDir="false" afterPath="$PROJECT_DIR$/zadanie03/z3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zadanie03/z3.js" beforeDir="false" afterPath="$PROJECT_DIR$/zadanie03/z3.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -67,11 +59,14 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Node.js.script2.js">
+  <component name="RunManager" selected="Node.js.z2.js">
     <configuration name="logic.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="logic.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
     <configuration name="script2.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="script2.js" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
+    <configuration name="z2.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="z2.js" working-dir="$PROJECT_DIR$/zadanie02">
       <method v="2" />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp">
@@ -85,6 +80,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Node.js.z2.js" />
         <item itemvalue="Node.js.script2.js" />
         <item itemvalue="Node.js.logic.js" />
       </list>
