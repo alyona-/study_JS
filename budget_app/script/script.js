@@ -43,6 +43,8 @@ let appData = {
     moneyDeposit: 0,
     period: 1,
     mission: 0,
+    targetMonth: 0,
+
     start: function (event) {
         if (salaryAmount.value === '') {
             event.preventDefault();
@@ -57,11 +59,12 @@ let appData = {
         appData.getAddIncome();
 
         appData.getBudget();
+        appData.getMission();
         appData.showResult();
 
         let dataInputItems = document.querySelectorAll('.data input');
         dataInputItems.forEach(function (item) {
-            if(item.className!=="period-select"){
+            if (item.className !== "period-select") {
                 item.disabled = true;
             }
         });
@@ -78,9 +81,9 @@ let appData = {
         targetMonthValue.value = Math.ceil(appData.getTargetMonth());
         incomePeriodValue.value = appData.calcPeriod();
 
-        periodSelect.addEventListener('input', function(){
+        periodSelect.addEventListener('input', function () {
             appData.period = +periodSelect.value;
-            incomePeriodValue.value= appData.calcPeriod();
+            incomePeriodValue.value = appData.calcPeriod();
         });
     },
     addExpensesBlock: function () {
@@ -114,7 +117,7 @@ let appData = {
 
             if (itemExpenses !== '' && cashExpenses !== '') {
                 appData.expenses[itemExpenses] = cashExpenses;
-                appData.expensesMonth+=cashExpenses;
+                appData.expensesMonth += cashExpenses;
             }
         });
     },
@@ -125,7 +128,7 @@ let appData = {
 
             if (itemIncome !== '' && cashIncome !== '') {
                 appData.income[itemIncome] = cashIncome;
-                appData.incomeMonth +=cashIncome;
+                appData.incomeMonth += cashIncome;
             }
         });
     },
@@ -181,7 +184,8 @@ let appData = {
         if (isNaN(targetAmount.value) || targetAmount.value === '' || targetAmount.value == null) {
 
         } else {
-            appData.mission = targetAmount.value;
+            appData.mission = +targetAmount.value;
+            appData.targetMonth = appData.mission / appData.budgetMonth;
         }
     },
     calcPeriod: function () {
