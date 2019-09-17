@@ -61,7 +61,9 @@ let appData = {
 
         let dataInputItems = document.querySelectorAll('.data input');
         dataInputItems.forEach(function (item) {
-            item.disabled = true;
+            if(item.className!=="period-select"){
+                item.disabled = true;
+            }
         });
         start.style.display = 'none';
         cancel.style.display = 'block';
@@ -75,6 +77,11 @@ let appData = {
         additionalIncomeValue.value = appData.addIncome.join(", ");
         targetMonthValue.value = Math.ceil(appData.getTargetMonth());
         incomePeriodValue.value = appData.calcPeriod();
+
+        periodSelect.addEventListener('input', function(){
+            appData.period = +periodSelect.value;
+            incomePeriodValue.value= appData.calcPeriod();
+        });
     },
     addExpensesBlock: function () {
         let cloneExpensesItem = expensesItems[0].cloneNode(true);
