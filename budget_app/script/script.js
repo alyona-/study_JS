@@ -69,7 +69,7 @@ let appData = {
         cancel.style.display = 'block';
     },
     showResult: function () {
-        appData.period = +periodSelect.value;
+        appData.period = periodSelect.value;
         budgetMonthValue.value = appData.budgetMonth;
         budgetDayValue.value = appData.budgetDay;
         expensesMonthValue.value = appData.expensesMonth;
@@ -110,20 +110,22 @@ let appData = {
     getExpenses: function () {
         expensesItems.forEach(function (item) {
             let itemExpenses = item.querySelector('.expenses-title').value,
-                cashExpenses = item.querySelector('.expenses-amount').value;
+                cashExpenses = +item.querySelector('.expenses-amount').value;
 
             if (itemExpenses !== '' && cashExpenses !== '') {
                 appData.expenses[itemExpenses] = cashExpenses;
+                appData.expensesMonth+=cashExpenses;
             }
         });
     },
     getIncome: function () {
         incomeItem.forEach(function (item) {
             let itemIncome = item.querySelector('.income-title').value,
-                cashIncome = item.querySelector('.income-amount').value;
+                cashIncome = +item.querySelector('.income-amount').value;
 
             if (itemIncome !== '' && cashIncome !== '') {
                 appData.income[itemIncome] = cashIncome;
+                appData.incomeMonth +=cashIncome;
             }
         });
     },
