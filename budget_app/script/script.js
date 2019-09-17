@@ -61,7 +61,9 @@ let appData = {
         cancel.style.display = 'block';
         let input = document.querySelectorAll('.calc input');
         input.forEach(function (item) {
-            item.disabled = true;
+            if (item.className !== "period-select") {
+                item.disabled = true;
+            }
         });
 
     },
@@ -82,6 +84,9 @@ let appData = {
         this.removeIncomeBlock();
         this.expensesMonth = 0;
         this.incomeMonth = 0;
+        this.budget = 0;
+        this.budgetDay = 0;
+        this.budgetMonth = 0;
         depositCheck.checked = false;
         this.deposit = false;
 
@@ -96,6 +101,8 @@ let appData = {
         additionalIncomeValue.value = this.addIncome.join(", ");
         targetMonthValue.value = Math.ceil(this.getTargetMonth());
         incomePeriodValue.value = this.calcPeriod();
+
+        periodSelect.addEventListener('input', this.calcPeriod.bind(this));
     },
 
     addExpensesBlock: function () {
@@ -225,6 +232,8 @@ let appData = {
     },
 
     calcPeriod: function () {
+        appData.period = +periodSelect.value;
+        incomePeriodValue.value = this.budgetMonth * this.period;
         return this.budgetMonth * this.period;
     }
 };
