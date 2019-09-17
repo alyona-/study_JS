@@ -251,7 +251,6 @@ periodSelect.addEventListener('input', function (event) {
 }, false);
 
 calcBlock.addEventListener('keypress', function (e) {
-  //  alert(e.key);
     let regexp;
     if (e.target.getAttribute("placeholder") === "Наименование") {
         regexp = /^[А-Яа-я]+$/;
