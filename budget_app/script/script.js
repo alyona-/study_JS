@@ -93,7 +93,13 @@ let appData = {
         this.budgetMonth=0;
         depositCheck.checked = false;
         this.deposit = false;
-
+        this.percentDeposit= 0;
+        this.moneyDeposit= 0;
+        this.period= 1;
+        this.mission= 0;
+        this.targetMonth= 0;
+        targetAmount.value=null;
+        targetMonthValue.value=null;
     },
 
     showResult: function () {
@@ -106,7 +112,6 @@ let appData = {
         targetMonthValue.value = Math.ceil(this.getTargetMonth());
         incomePeriodValue.value = this.calcPeriod();
         periodSelect.addEventListener('input', this.calcPeriod.bind(this));
-
     },
 
     addExpensesBlock: function () {
