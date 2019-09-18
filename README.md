@@ -1,4 +1,4 @@
-# study_JS lesson11 часть 1
+# study_JS lesson11 часть 2
  
 1. 
 
