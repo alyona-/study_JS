@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0cf64f3c-1ede-4219-89ed-8ee0d9480e6c" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/budget_app/script/class.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/budget_app/script/class2.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/budget_app/script/class_prototype.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/budget_app/script/constructor.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/budget_app/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/budget_app/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/budget_app/script/script.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/budget_app/script/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/budget_app/script/script.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -53,6 +47,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\study_JS\budget_app\script\otherScript" />
       <recent name="$PROJECT_DIR$/zadanie3" />
       <recent name="$PROJECT_DIR$" />
     </key>
@@ -80,7 +75,7 @@
       <updated>1568317842496</updated>
       <workItem from="1568317844902" duration="7519000" />
       <workItem from="1568651742662" duration="5170000" />
-      <workItem from="1568830996737" duration="20262000" />
+      <workItem from="1568830996737" duration="20922000" />
     </task>
     <servers />
   </component>
