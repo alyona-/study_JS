@@ -65,6 +65,7 @@ class AppData {
                 item.disabled = true;
             }
         });
+        this._depositBank.disabled=true;
     };
 
     cancel() {
@@ -97,6 +98,7 @@ class AppData {
         this.targetMonth = 0;
         this._targetAmount.value = null;
         this._targetMonthValue.value = null;
+        this._depositBank.disabled=false;
     };
 
     showResult() {
