@@ -72,11 +72,7 @@ window.addEventListener('DOMContentLoaded', function () {
             menuItems = menu.querySelectorAll('ul>li');
 
         const handlerMenu = () => {
-            if (!menu.style.transform || menu.style.transform === `translate(-100%)`) {
-                menu.style.transform = `translate(0)`;
-            } else {
-                menu.style.transform = `translate(-100%)`;
-            }
+           menu.classList.toggle('active-menu');
         };
         btnMenu.addEventListener('click', handlerMenu);
         closeBtn.addEventListener('click', handlerMenu);
@@ -85,3 +81,21 @@ window.addEventListener('DOMContentLoaded', function () {
     };
     toggleMenu();
 });
+
+//popup
+const togglePopup = () => {
+    const popup =document.querySelector('.popup'),
+    popupBtn =document.querySelectorAll('.popup-btn'),
+    popupClose = document.querySelector('.popup-close');
+
+    popupBtn.forEach( (elem) => {
+        elem.addEventListener('click', () => {
+           popup.style.display = 'block';
+        });
+    });
+    popupClose.addEventListener('click', () => {
+        popup.style.display = 'none';
+    }) ;
+
+};
+togglePopup();
