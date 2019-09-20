@@ -63,7 +63,6 @@ window.addEventListener('DOMContentLoaded', function () {
     }
 
     let interval = setInterval(countTimer, 10, '19 september 2019');
-
     //меню
     const toggleMenu = () => {
         const btnMenu = document.querySelector('.menu'),
