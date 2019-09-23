@@ -1,4 +1,4 @@
-# study_JS Practice 2
+# study_JS Practice 2 Слайдер
  
 1. 
 
