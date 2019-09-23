@@ -7,10 +7,6 @@ const changeText = (event) => {
     content.textContent = event.target.textContent;
 };
 
-// buttons.forEach((elem) => {
-//     elem.addEventListener('click', changeText);
-// });
-
 const getButton = () =>{
     const newButton = buttons[0].cloneNode();
     let textButton = buttons.length + 1;
@@ -25,4 +21,11 @@ const getButton = () =>{
 };
 
 addButton.addEventListener('click', getButton);
+wrapButtons.addEventListener('click',() => {
+    //Исключаем все кроме класса buttons
+    if(!event.target.classList.matches('.button')) {
+        return;
+    }
+    changeText(event);
+});
 
