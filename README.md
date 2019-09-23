@@ -1,4 +1,4 @@
-# study_JS lesson14
+# study_JS Practice 2
  
 1. 
 
