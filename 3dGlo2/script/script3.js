@@ -64,94 +64,27 @@ window.addEventListener('DOMContentLoaded', function () {
 
     let interval = setInterval(countTimer, 10, '19 september 2019');
     //меню
-    //меню
     const toggleMenu = () => {
-        const btnMenu = document.querySelector('.menu'),
-            menu = document.querySelector('menu'),
-            closeBtn = document.querySelector('.close-btn'),
-            menuItems = menu.querySelectorAll('ul>li');
+        const menu = document.querySelector('menu');
 
-      // const handlerMenu = () => {
-      //     menu.classList.toggle('active-menu');
-      //
-      //   };
-        let body =document.querySelector('body');
-
-
-        function handlerMenu (outEvent) {
-            document.addEventListener('click', function (event) {
-                event.stopPropagation();
-                let target = event.target;
-
-
-                if(target.closest('.menu')){
-                    menu.classList.toggle('active-menu');
-                }else if(target.closest('.close-btn')){
-                    menu.classList.toggle('active-menu');
-                }else if(target.closest('menu')){
-                    menu.classList.toggle('active-menu');
-                }else if(target.closest('body')){
-                  if(menu.classList.toggle('active-menu'))  {
-                      menu.classList.toggle('active-menu');
-                  }
-                    return false;
-                }
-            });
-        }
-
-
-     /* btnMenu.addEventListener('click', (eventOut) =>{
-          let targetOut =eventOut.target;
-          targetOut = targetOut.closest('.menu');
-          if(targetOut) {
-
-             document.addEventListener('click', function (event) {
-                  event.stopPropagation();
-                  let target = event.target;
-                  if(target.closest('.menu')){
-                      menu.classList.toggle('active-menu');
-                  }else if(target.closest('.close-btn')){
-                      menu.classList.toggle('active-menu');
-                  }else if(target.closest('menu')){
-                      menu.classList.toggle('active-menu');
-                  }else if(target.closest('body')){
-                      if(menu.classList.toggle('active-menu'))  {
-                          menu.classList.toggle('active-menu');
-                      }
-                      return false;
-                  }
-              });
-
-          }
-      }); */
-        document.addEventListener('click', function (event) {
+        const handlerMenu = (event) => {
             event.stopPropagation();
             let target = event.target;
-            if(target.closest('.menu')){
+            if (target.closest('.menu') || target.closest('.close-btn') || target.closest('menu')) {
                 menu.classList.toggle('active-menu');
-            }else if(target.closest('.close-btn')){
-                menu.classList.toggle('active-menu');
-            }else if(target.closest('menu')){
-                menu.classList.toggle('active-menu');
-            }else if(target.closest('body')){
-                if(menu.classList.toggle('active-menu'))  {
+            } else if (target.closest('body')) {
+                if (menu.classList.toggle('active-menu')) {
                     menu.classList.toggle('active-menu');
                 }
                 return false;
             }
+        };
+        document.addEventListener('click', (event) => {
+            handlerMenu(event);
         });
-
-
 
     };
     toggleMenu();
-
-
-
-
-
-
-
 });
 
 //popup
@@ -191,16 +124,16 @@ const togglePopup = () => {
 
 
     popup.addEventListener('click', (event) => {
-       let target = event.target;
+        let target = event.target;
 
-       if(target.classList.contains('popup-close')) {
-           close();
-       }else {
-           target = target.closest('.popup-content');
-           if(!target) {
-               close();
-           }
-       }
+        if (target.classList.contains('popup-close')) {
+            close();
+        } else {
+            target = target.closest('.popup-content');
+            if (!target) {
+                close();
+            }
+        }
     });
 
     let startAnimate = function () {
@@ -216,7 +149,6 @@ const togglePopup = () => {
         if (animParam === 'close') animCount = animCount - 50;
         else animCount = animCount + 50;
     };
-
 };
 
 togglePopup();
@@ -229,8 +161,8 @@ const tabs = () => {
 
 
     const toggleTabContent = (index) => {
-        for(let i=0; i<tabContent.length; i++){
-            if(index === i){
+        for (let i = 0; i < tabContent.length; i++) {
+            if (index === i) {
                 tab[i].classList.add('active');
                 tabContent[i].classList.remove('d-none');
             } else {
@@ -241,16 +173,16 @@ const tabs = () => {
     };
 
     tabHeader.addEventListener('click', (event) => {
-        let target =event.target;
+        let target = event.target;
         target = target.closest('.service-header-tab');
 
-        if(target) {
+        if (target) {
             tab.forEach((item, i) => {
-                if(item === target) {
+                if (item === target) {
                     toggleTabContent(i);
                 }
             });
-         }
+        }
     });
 };
 
