@@ -64,27 +64,94 @@ window.addEventListener('DOMContentLoaded', function () {
 
     let interval = setInterval(countTimer, 10, '19 september 2019');
     //меню
+    //меню
     const toggleMenu = () => {
-        const menu = document.querySelector('menu');
+        const btnMenu = document.querySelector('.menu'),
+            menu = document.querySelector('menu'),
+            closeBtn = document.querySelector('.close-btn'),
+            menuItems = menu.querySelectorAll('ul>li');
 
-        const handlerMenu = (event) => {
+      // const handlerMenu = () => {
+      //     menu.classList.toggle('active-menu');
+      //
+      //   };
+        let body =document.querySelector('body');
+
+
+        function handlerMenu (outEvent) {
+            document.addEventListener('click', function (event) {
+                event.stopPropagation();
+                let target = event.target;
+
+
+                if(target.closest('.menu')){
+                    menu.classList.toggle('active-menu');
+                }else if(target.closest('.close-btn')){
+                    menu.classList.toggle('active-menu');
+                }else if(target.closest('menu')){
+                    menu.classList.toggle('active-menu');
+                }else if(target.closest('body')){
+                  if(menu.classList.toggle('active-menu'))  {
+                      menu.classList.toggle('active-menu');
+                  }
+                    return false;
+                }
+            });
+        }
+
+
+     /* btnMenu.addEventListener('click', (eventOut) =>{
+          let targetOut =eventOut.target;
+          targetOut = targetOut.closest('.menu');
+          if(targetOut) {
+
+             document.addEventListener('click', function (event) {
+                  event.stopPropagation();
+                  let target = event.target;
+                  if(target.closest('.menu')){
+                      menu.classList.toggle('active-menu');
+                  }else if(target.closest('.close-btn')){
+                      menu.classList.toggle('active-menu');
+                  }else if(target.closest('menu')){
+                      menu.classList.toggle('active-menu');
+                  }else if(target.closest('body')){
+                      if(menu.classList.toggle('active-menu'))  {
+                          menu.classList.toggle('active-menu');
+                      }
+                      return false;
+                  }
+              });
+
+          }
+      }); */
+        document.addEventListener('click', function (event) {
             event.stopPropagation();
             let target = event.target;
-            if (target.closest('.menu') || target.closest('.close-btn') || target.closest('menu')) {
+            if(target.closest('.menu')){
                 menu.classList.toggle('active-menu');
-            } else if (target.closest('body')) {
-                if (menu.classList.toggle('active-menu')) {
+            }else if(target.closest('.close-btn')){
+                menu.classList.toggle('active-menu');
+            }else if(target.closest('menu')){
+                menu.classList.toggle('active-menu');
+            }else if(target.closest('body')){
+                if(menu.classList.toggle('active-menu'))  {
                     menu.classList.toggle('active-menu');
                 }
                 return false;
             }
-        };
-        document.addEventListener('click', (event) => {
-            handlerMenu(event);
         });
+
+
 
     };
     toggleMenu();
+
+
+
+
+
+
+
 });
 
 //popup
@@ -124,16 +191,16 @@ const togglePopup = () => {
 
 
     popup.addEventListener('click', (event) => {
-        let target = event.target;
+       let target = event.target;
 
-        if (target.classList.contains('popup-close')) {
-            close();
-        } else {
-            target = target.closest('.popup-content');
-            if (!target) {
-                close();
-            }
-        }
+       if(target.classList.contains('popup-close')) {
+           close();
+       }else {
+           target = target.closest('.popup-content');
+           if(!target) {
+               close();
+           }
+       }
     });
 
     let startAnimate = function () {
@@ -149,6 +216,7 @@ const togglePopup = () => {
         if (animParam === 'close') animCount = animCount - 50;
         else animCount = animCount + 50;
     };
+
 };
 
 togglePopup();
@@ -161,8 +229,8 @@ const tabs = () => {
 
 
     const toggleTabContent = (index) => {
-        for (let i = 0; i < tabContent.length; i++) {
-            if (index === i) {
+        for(let i=0; i<tabContent.length; i++){
+            if(index === i){
                 tab[i].classList.add('active');
                 tabContent[i].classList.remove('d-none');
             } else {
@@ -173,106 +241,17 @@ const tabs = () => {
     };
 
     tabHeader.addEventListener('click', (event) => {
-        let target = event.target;
+        let target =event.target;
         target = target.closest('.service-header-tab');
 
-        if (target) {
+        if(target) {
             tab.forEach((item, i) => {
-                if (item === target) {
+                if(item === target) {
                     toggleTabContent(i);
                 }
             });
-        }
+         }
     });
 };
 
 tabs();
-
-//слайдер
-const slider = () => {
-    const slide = document.querySelectorAll('.portfolio-item'),
-    btn = document.querySelectorAll('.portfolio-btn'),
-    dot = document.querySelectorAll('.dot'),
-    slider = document.querySelector('.portfolio-content');
-
-    let currentSlide= 0, interval;
-
-    const prevSlide = (elem, index, strClass) => {
-        elem[index].classList.remove(strClass);
-    };
-
-    const nextSlide = (elem, index, strClass) => {
-        elem[index].classList.add(strClass);
-    };
-    const autoPlaySlide = () => {
-        prevSlide(slide, currentSlide, 'portfolio-item-active');
-        prevSlide(dot, currentSlide, 'dot-active');
-        currentSlide++;
-        if(currentSlide >= slide.length) {
-            currentSlide = 0;
-        }
-        nextSlide(slide, currentSlide, 'portfolio-item-active');
-        nextSlide(dot, currentSlide, 'dot-active');
-    };
-
-    const startSlide = (time = 3000) => {
-        interval = setInterval(autoPlaySlide, time);
-    };
-
-    const stopSlide = () => {
-        clearInterval(interval);
-    };
-
-    slider.addEventListener('click', (event) => {
-        event.preventDefault();
-        let target = event.target;
-
-        prevSlide(slide, currentSlide, 'portfolio-item-active');
-        prevSlide(dot, currentSlide, 'dot-active');
-
-        if(!target.matches('.portfolio-btn, .dot')){
-           // console.log(1);
-            return;
-        }
-
-        if(target.matches('#arrow-right')) {
-            currentSlide++;
-        }else if(target.matches('#arrow-left')){
-            currentSlide--;
-        }else if(target.matches('.dot')){
-            dot.forEach((elem, index) => {
-                if(elem === target){
-                    currentSlide=index;
-                }
-            });
-        }
-
-        if(currentSlide >= slide.length){
-            currentSlide=0;
-        }
-
-        if(currentSlide < 0){
-            currentSlide =slide.length-1;
-        }
-        nextSlide(slide, currentSlide, 'portfolio-item-active');
-        nextSlide(dot, currentSlide, 'dot-active');
-    });
-
-    slider.addEventListener('mouseover', (event) => {
-        if(event.target.matches('.portfolio-btn') ||
-            event.target.matches('.dot')) {
-            stopSlide();
-        }
-    });
-
-    slider.addEventListener('mouseout', (event) => {
-        if(event.target.matches('.portfolio-btn') ||
-            event.target.matches('.dot')) {
-            startSlide();
-        }
-    });
-    startSlide(1500);
-
-};
-  slider();
-

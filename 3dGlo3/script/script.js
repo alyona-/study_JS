@@ -62,30 +62,35 @@ window.addEventListener('DOMContentLoaded', function () {
 
     }
 
-    let interval = setInterval(countTimer, 10, '19 september 2019');
-    //меню
-    const toggleMenu = () => {
-        const menu = document.querySelector('menu');
-
-        const handlerMenu = (event) => {
-            event.stopPropagation();
-            let target = event.target;
-            if (target.closest('.menu') || target.closest('.close-btn') || target.closest('menu')) {
-                menu.classList.toggle('active-menu');
-            } else if (target.closest('body')) {
-                if (menu.classList.toggle('active-menu')) {
-                    menu.classList.toggle('active-menu');
-                }
-                return false;
-            }
-        };
-        document.addEventListener('click', (event) => {
-            handlerMenu(event);
-        });
-
-    };
-    toggleMenu();
+    let interval = setInterval(countTimer, 10, '19 october 2019');
 });
+
+
+//меню
+const toggleMenu = () => {
+    const menu = document.querySelector('menu');
+
+    const handlerMenu = (event) => {
+        event.stopPropagation();
+        let target = event.target;
+        if (target.closest('.menu') || target.closest('.close-btn') || target.closest('menu')) {
+            menu.classList.toggle('active-menu');
+        } else if (target.closest('body')) {
+            if (menu.classList.toggle('active-menu')) {
+                menu.classList.toggle('active-menu');
+            }
+            return false;
+        }
+    };
+    document.addEventListener('click', (event) => {
+        handlerMenu(event);
+    });
+
+};
+toggleMenu();
+
+
+//-----------------------------------------
 
 //popup
 const togglePopup = () => {
@@ -190,13 +195,25 @@ tabs();
 
 //слайдер
 const slider = () => {
+    const createDot = () => {
+        let slide = document.querySelectorAll('.portfolio-item'),
+            portfolioDots = document.querySelector('.portfolio-dots');
+        slide.forEach((elem, index) => {
+            let dotItem = document.createElement('li');
+            (index === 0)
+                ? dotItem.classList.add('dot', 'dot-active')
+                : dotItem.classList.add('dot');
+            portfolioDots.appendChild(dotItem);
+        });
+    };
+    createDot();
+
     const slide = document.querySelectorAll('.portfolio-item'),
-    btn = document.querySelectorAll('.portfolio-btn'),
-    dot = document.querySelectorAll('.dot'),
-    slider = document.querySelector('.portfolio-content');
+        btn = document.querySelectorAll('.portfolio-btn'),
+        dot = document.querySelectorAll('.dot'),
+        slider = document.querySelector('.portfolio-content');
 
-    let currentSlide= 0, interval;
-
+    let currentSlide = 0, interval;
     const prevSlide = (elem, index, strClass) => {
         elem[index].classList.remove(strClass);
     };
@@ -208,7 +225,7 @@ const slider = () => {
         prevSlide(slide, currentSlide, 'portfolio-item-active');
         prevSlide(dot, currentSlide, 'dot-active');
         currentSlide++;
-        if(currentSlide >= slide.length) {
+        if (currentSlide >= slide.length) {
             currentSlide = 0;
         }
         nextSlide(slide, currentSlide, 'portfolio-item-active');
@@ -230,43 +247,42 @@ const slider = () => {
         prevSlide(slide, currentSlide, 'portfolio-item-active');
         prevSlide(dot, currentSlide, 'dot-active');
 
-        if(!target.matches('.portfolio-btn, .dot')){
-           // console.log(1);
+        if (!target.matches('.portfolio-btn, .dot'))
             return;
-        }
 
-        if(target.matches('#arrow-right')) {
+
+        if (target.matches('#arrow-right')) {
             currentSlide++;
-        }else if(target.matches('#arrow-left')){
+        } else if (target.matches('#arrow-left')) {
             currentSlide--;
-        }else if(target.matches('.dot')){
+        } else if (target.matches('.dot')) {
             dot.forEach((elem, index) => {
-                if(elem === target){
-                    currentSlide=index;
+                if (elem === target) {
+                    currentSlide = index;
                 }
             });
         }
 
-        if(currentSlide >= slide.length){
-            currentSlide=0;
+        if (currentSlide >= slide.length) {
+            currentSlide = 0;
         }
 
-        if(currentSlide < 0){
-            currentSlide =slide.length-1;
+        if (currentSlide < 0) {
+            currentSlide = slide.length - 1;
         }
         nextSlide(slide, currentSlide, 'portfolio-item-active');
         nextSlide(dot, currentSlide, 'dot-active');
     });
 
     slider.addEventListener('mouseover', (event) => {
-        if(event.target.matches('.portfolio-btn') ||
+        if (event.target.matches('.portfolio-btn') ||
             event.target.matches('.dot')) {
             stopSlide();
         }
     });
 
     slider.addEventListener('mouseout', (event) => {
-        if(event.target.matches('.portfolio-btn') ||
+        if (event.target.matches('.portfolio-btn') ||
             event.target.matches('.dot')) {
             startSlide();
         }
@@ -274,5 +290,5 @@ const slider = () => {
     startSlide(1500);
 
 };
-  slider();
+slider();
 
