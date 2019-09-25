@@ -1,3 +1,3 @@
 <?php 
-
-echo $_SERVER[‘REMOTE_ADDR‘];
+sleep(5);
+echo $_SERVER['REMOTE_ADDR'];

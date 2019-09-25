@@ -367,3 +367,46 @@ const calc = (price = 100) => {
 };
 
 calc();
+
+//send-ajax-form
+const sendForm = () => {
+    const errorMessage = 'Что-то пошло не так...',
+    loadMessage ='Загрузка...',
+    successMessage ='Спасибо! Мы скоро с вами свяжемся!';
+
+    const form = document.getElementById('form1');
+    const statusMessage = document.createElement('div');
+
+    statusMessage.textContent = 'Тут будет сообщение';
+    statusMessage.style.cssText = 'font-size: 2rem;';
+
+
+    form.addEventListener('submit', (event) => {
+        event.preventDefault();
+        form.appendChild(statusMessage);
+
+        const request =  new XMLHttpRequest();
+        request.open('POST', './server.php');
+        request.setRequestHeader('Content-type', 'multipart/form-data');
+        const formData = new FormData(form);
+        request.send(formData);
+
+        request.addEventListener('readystatechange', () =>{
+            statusMessage.textContent = loadMessage;
+
+            if(request.readyState !==4) {
+                return;
+            }
+            if(request.status===200) {
+                statusMessage.textContent = successMessage;
+            }else {
+                statusMessage.textContent = errorMessage;
+            }
+        });
+    });
+
+    form.appendChild(statusMessage);
+
+};
+
+sendForm();

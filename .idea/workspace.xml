@@ -2,18 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0cf64f3c-1ede-4219-89ed-8ee0d9480e6c" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/test1/cars.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test1/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test1/script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test1/script_connect_true.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test1/script_connect_true2.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test1/script_content.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test1/testparser.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test2/t1.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test2/t2.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test2/t3.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test2/t4.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/3dGlo2/script/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/3dGlo2/script/script.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -44,7 +34,7 @@
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/3dGlo3" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/3dGlo2" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.prettier" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -58,18 +48,18 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\study_JS\3dGlo2" />
+      <recent name="C:\xampp\htdocs\study_JS\3dGlo3" />
+      <recent name="C:\xampp\htdocs\study_JS\testimg\img" />
+      <recent name="$PROJECT_DIR$/deleg" />
+      <recent name="$PROJECT_DIR$/3dGlo2" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\study_JS\other" />
       <recent name="C:\xampp\htdocs\study_JS\3dGlo\script\other" />
       <recent name="$PROJECT_DIR$/zadanie3" />
       <recent name="$PROJECT_DIR$" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\study_JS\3dGlo3" />
-      <recent name="C:\xampp\htdocs\study_JS\3dGlo2" />
-      <recent name="C:\xampp\htdocs\study_JS\testimg\img" />
-      <recent name="$PROJECT_DIR$/deleg" />
-      <recent name="$PROJECT_DIR$/3dGlo2" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -131,7 +121,7 @@
       <workItem from="1568967874562" duration="20807000" />
       <workItem from="1569174241395" duration="16588000" />
       <workItem from="1569236688057" duration="1103000" />
-      <workItem from="1569419746084" duration="7190000" />
+      <workItem from="1569419746084" duration="8717000" />
     </task>
     <servers />
   </component>
