@@ -2,8 +2,108 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0cf64f3c-1ede-4219-89ed-8ee0d9480e6c" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/3dGlo2/script/script_old.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/3dGlo3/.jshintrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/3dGlo3/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/3dGlo3/css/style.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/3dGlo3/fonts/Roboto-Bold.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/3dGlo3/fonts/Roboto-Bold.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/3dGlo3/fonts/Roboto-Bold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/3dGlo3/fonts/Roboto-Bold.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/3dGlo3/fonts/Roboto-Bold.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/3dGlo3/fonts/Roboto-Light.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/3dGlo3/fonts/Roboto-Light.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/3dGlo3/fonts/Roboto-Light.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/3dGlo3/fonts/Roboto-Light.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/3dGlo3/fonts/Roboto-Light.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/3dGlo3/fonts/Roboto-Medium.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/3dGlo3/fonts/Roboto-Medium.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/3dGlo3/fonts/Roboto-Medium.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/3dGlo3/fonts/Roboto-Medium.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/3dGlo3/fonts/Roboto-Medium.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/3dGlo3/fonts/Roboto-Regular.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/3dGlo3/fonts/Roboto-Regular.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/3dGlo3/fonts/Roboto-Regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/3dGlo3/fonts/Roboto-Regular.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/3dGlo3/fonts/Roboto-Regular.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/3dGlo3/images/3dglo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/3dGlo3/images/calc.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/3dGlo3/images/command/command-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/3dGlo3/images/command/command-1a.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/3dGlo3/images/command/command-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/3dGlo3/images/command/command-2a.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/3dGlo3/images/command/command-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/3dGlo3/images/command/command-3a.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/3dGlo3/images/command/command-4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/3dGlo3/images/command/command-4a.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/3dGlo3/images/command/command-5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/3dGlo3/images/command/command-5a.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/3dGlo3/images/command/command-6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/3dGlo3/images/command/command-6a.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/3dGlo3/images/command/cov-1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/3dGlo3/images/command/cov-2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/3dGlo3/images/companies/companies-1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/3dGlo3/images/companies/companies-2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/3dGlo3/images/companies/companies-3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/3dGlo3/images/companies/companies-4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/3dGlo3/images/companies/companies-5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/3dGlo3/images/companies/companies-6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/3dGlo3/images/companies/companies-7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/3dGlo3/images/connect/connect-bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/3dGlo3/images/connect/letter.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/3dGlo3/images/connect/phone.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/3dGlo3/images/connect/skype.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/3dGlo3/images/connect/tele.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/3dGlo3/images/connect/whatsapp.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/3dGlo3/images/favicon/android-chrome-192x192.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/3dGlo3/images/favicon/apple-touch-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/3dGlo3/images/favicon/browserconfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/3dGlo3/images/favicon/favicon-16x16.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/3dGlo3/images/favicon/favicon-32x32.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/3dGlo3/images/favicon/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/3dGlo3/images/favicon/mstile-150x150.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/3dGlo3/images/favicon/safari-pinned-tab.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/3dGlo3/images/favicon/site.webmanifest" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/3dGlo3/images/footer/academy.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/3dGlo3/images/footer/face.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/3dGlo3/images/footer/google.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/3dGlo3/images/footer/insta.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/3dGlo3/images/icons/left-arrow.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/3dGlo3/images/icons/right-arrow.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/3dGlo3/images/i«u«_2@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/3dGlo3/images/main-bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/3dGlo3/images/menu.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/3dGlo3/images/phone.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/3dGlo3/images/portfilio/portfolio-01.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/3dGlo3/images/portfilio/portfolio-02.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/3dGlo3/images/portfilio/portfolio-03.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/3dGlo3/images/portfilio/portfolio-04.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/3dGlo3/images/portfilio/portfolio-05.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/3dGlo3/images/portfilio/portfolio-06.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/3dGlo3/images/portfilio/portfolio-07.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/3dGlo3/images/portfilio/portfolio-08.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/3dGlo3/images/portfilio/portfolio-09.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/3dGlo3/images/portfilio/portfolio-10.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/3dGlo3/images/scroll.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/3dGlo3/images/service/service-1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/3dGlo3/images/service/service-2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/3dGlo3/images/service/service-3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/3dGlo3/images/Лого_2@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/3dGlo3/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/3dGlo3/robots.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/3dGlo3/script/script.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/3dGlo3/script/script_old.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/3dGlo3/server.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ee.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/http/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/http/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/http/server.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/3dGlo2/script/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/3dGlo2/script/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/3dGlo2/server.php" beforeDir="false" afterPath="$PROJECT_DIR$/3dGlo2/server.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -11,11 +111,25 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -34,7 +148,7 @@
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/3dGlo2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/3dGlo3" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.prettier" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -49,11 +163,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\study_JS\3dGlo2" />
       <recent name="C:\xampp\htdocs\study_JS\3dGlo3" />
+      <recent name="C:\xampp\htdocs\study_JS\http" />
+      <recent name="C:\xampp\htdocs\study_JS\3dGlo2" />
       <recent name="C:\xampp\htdocs\study_JS\testimg\img" />
       <recent name="$PROJECT_DIR$/deleg" />
-      <recent name="$PROJECT_DIR$/3dGlo2" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\study_JS\other" />
@@ -121,7 +235,9 @@
       <workItem from="1568967874562" duration="20807000" />
       <workItem from="1569174241395" duration="16588000" />
       <workItem from="1569236688057" duration="1103000" />
-      <workItem from="1569419746084" duration="8717000" />
+      <workItem from="1569419746084" duration="14653000" />
+      <workItem from="1569493969837" duration="4480000" />
+      <workItem from="1569678567918" duration="3087000" />
     </task>
     <servers />
   </component>
