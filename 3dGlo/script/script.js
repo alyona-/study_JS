@@ -159,7 +159,6 @@ const tabs = () => {
         tab = tabHeader.querySelectorAll('.service-header-tab'),
         tabContent = document.querySelectorAll('.service-tab');
 
-
     const toggleTabContent = (index) => {
         for (let i = 0; i < tabContent.length; i++) {
             if (index === i) {
@@ -367,3 +366,84 @@ const calc = (price = 100) => {
 };
 
 calc();
+
+//send-ajax-form
+const sendForm = () => {
+    const errorMessage = 'Что-то пошло не так...',
+    loadMessage ='Загрузка...',
+    successMessage ='Спасибо! Мы скоро с вами свяжемся!';
+
+    const statusMessage = document.createElement('div');
+    statusMessage.style.cssText = 'font-size: 2rem; color:#fff;';
+
+   const formSubmit =(event) => {
+       event.preventDefault();
+       let target = event.target;
+       target.appendChild(statusMessage);
+       const formData = new FormData(target);
+
+       let body ={};
+       formData.forEach((val,key) => {
+           body[key] = val;
+       });
+
+       postData(body,
+           ()=>{
+               statusMessage.textContent = successMessage;
+               target.querySelectorAll('input')
+                   .forEach((item) => {
+                  item.value = null;
+               });
+
+           }, (error)=>{
+               statusMessage.textContent = errorMessage;
+               console.error(error)
+           });
+   };
+
+    const formValid = (event) => {
+        event.stopPropagation();
+        let target = event.target;
+        if (target.closest('#form1') || target.closest('#form2') || target.closest('#form3')) {
+            if(target.matches('input.form-name') || target.matches('input#form2-name') || target.matches('input#form2-message') )
+                target.value = target.value.replace(/[^А-Яа-я\s]/gi, '');
+            else if(target.matches('input.form-phone') )
+                target.value = target.value.replace(/[^0-9(\\+)]/g, '');
+        }
+       return false;
+    };
+    document.addEventListener('input', (event) => {
+        formValid(event);
+    });
+
+    document.addEventListener('submit', (event) => {
+        let target = event.target;
+        if (target.closest('#form1') || target.closest('#form2') || target.closest('#form3')) {
+            formSubmit(event);
+        }
+        return false;
+    });
+
+    const postData = (body, outputData, errorData) => {
+        const request =  new XMLHttpRequest();
+        request.addEventListener('readystatechange', () =>{
+            if(request.readyState !==4) {
+                return;
+            }
+            if(request.status===200) {
+                outputData();
+                statusMessage.textContent = successMessage;
+            }else {
+                errorData(request.status);
+                statusMessage.textContent = errorMessage;
+                console.error(request.status);
+            }
+        });
+        request.open('POST', './server.php');
+        request.setRequestHeader('Content-Type', 'application/json');
+        request.send(JSON.stringify(body));
+    };
+
+};
+
+sendForm();
