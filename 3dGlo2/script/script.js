@@ -387,7 +387,7 @@ const sendForm = () => {
         return false;
     };
 
-    const postData = (params) => {
+    /*const postData = (params) => {
         return new Promise((resolve, reject) => {
             const request = new XMLHttpRequest();
             request.addEventListener('readystatechange', () => {
@@ -402,7 +402,21 @@ const sendForm = () => {
             request.setRequestHeader('Content-Type', 'application/json');
             request.send(JSON.stringify(params.body));
         });
+    }; */
+
+    const postData =(params) => {
+        return fetch('./server.php', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(params.body)
+        })
     };
+
+
+
+
 
     const doForm = (event) => {
         return new Promise((resolve, reject) => {
@@ -446,10 +460,13 @@ const sendForm = () => {
             })
             .then(postData)
             .then((target) => {
+                if(target.status !== 200) {
+                    throw new Error('status network not 200');
+                }
                 statusMessage.textContent = successMessage;
                 return target;
             })
-            .then(cleanFormData)
+            //.then(cleanFormData)
             .catch(() => statusMessage.textContent = errorMessage)
     });
 };
