@@ -371,35 +371,9 @@ calc();
 const sendForm = () => {
     const errorMessage = 'Что-то пошло не так...',
         loadMessage = 'Загрузка...',
-        successMessage = 'Спасибо! Мы скоро с вами свяжемся!';
-
-    const statusMessage = document.createElement('div');
+        successMessage = 'Спасибо! Мы скоро с вами свяжемся!',
+        statusMessage = document.createElement('div');
     statusMessage.style.cssText = 'font-size: 2rem; color:#fff;';
-
-    const formSubmit = (event) => {
-        event.preventDefault();
-        let target = event.target;
-        target.appendChild(statusMessage);
-        const formData = new FormData(target);
-
-        let body = {};
-        formData.forEach((val, key) => {
-            body[key] = val;
-        });
-
-        postData(body,
-            () => {
-                statusMessage.textContent = successMessage;
-                target.querySelectorAll('input')
-                    .forEach((item) => {
-                        item.value = null;
-                    });
-
-            }, (error) => {
-                statusMessage.textContent = errorMessage;
-                console.error(error)
-            });
-    };
 
     const formValid = (event) => {
         event.stopPropagation();
@@ -412,35 +386,72 @@ const sendForm = () => {
         }
         return false;
     };
+
+    const postData = (params) => {
+        return new Promise((resolve, reject) => {
+            const request = new XMLHttpRequest();
+            request.addEventListener('readystatechange', () => {
+                if (request.readyState !== 4) return;
+                if (request.status === 200) {
+                    resolve(params.target);
+                } else {
+                    reject(params.target);
+                }
+            });
+            request.open('POST', './server.php');
+            request.setRequestHeader('Content-Type', 'application/json');
+            request.send(JSON.stringify(params.body));
+        });
+    };
+
+    const doForm = (event) => {
+        return new Promise((resolve, reject) => {
+            let target = event.target;
+            if (target.closest('#form1') || target.closest('#form2') || target.closest('#form3')) {
+                resolve(event);
+            } else {
+                reject();
+            }
+        });
+    };
+
+    const formSubmit = (event) => {
+        event.preventDefault();
+        let target = event.target;
+        target.appendChild(statusMessage);
+        const formData = new FormData(target);
+        let body = {};
+        formData.forEach((val, key) => {
+            body[key] = val;
+        });
+        return {target: target, body: body};
+    };
+
+    const cleanFormData = (target) => {
+        target.querySelectorAll('input')
+            .forEach((item) => {
+                item.value = null;
+            });
+    };
+
     document.addEventListener('input', (event) => {
         formValid(event);
     });
 
     document.addEventListener('submit', (event) => {
-        let target = event.target;
-        if (target.closest('#form1') || target.closest('#form2') || target.closest('#form3')) {
-            formSubmit(event);
-        }
-        return false;
-    });
-
-    const postData = (body, outputData, errorData) => {
-        const request = new XMLHttpRequest();
-        request.addEventListener('readystatechange', () => {
-            if (request.readyState !== 4)   return;
-            if (request.status === 200) {
-                outputData();
+        doForm(event)
+            .then(formSubmit)
+            .catch(() => {
+                return false;
+            })
+            .then(postData)
+            .then((target) => {
                 statusMessage.textContent = successMessage;
-            } else {
-                errorData(request.status);
-                statusMessage.textContent = errorMessage;
-            }
-        });
-        request.open('POST', './server.php');
-        request.setRequestHeader('Content-Type', 'application/json');
-        request.send(JSON.stringify(body));
-    };
-
+                return target;
+            })
+            .then(cleanFormData)
+            .catch(() => statusMessage.textContent = errorMessage)
+    });
 };
 
 sendForm();
