@@ -1,0 +1,22 @@
+const toggleMenu = () => {
+    const menu = document.querySelector('menu');
+
+    const handlerMenu = (event) => {
+        event.stopPropagation();
+        let target = event.target;
+        if (target.closest('.menu') || target.closest('.close-btn') || target.closest('menu')) {
+            menu.classList.toggle('active-menu');
+        } else if (target.closest('body')) {
+            if (menu.classList.toggle('active-menu')) {
+                menu.classList.toggle('active-menu');
+            }
+            return false;
+        }
+    };
+    document.addEventListener('click', (event) => {
+        handlerMenu(event);
+    });
+
+};
+
+export default toggleMenu;
