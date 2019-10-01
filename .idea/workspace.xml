@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0cf64f3c-1ede-4219-89ed-8ee0d9480e6c" name="Default" comment="ewrwe werwe">
-      <change afterPath="$PROJECT_DIR$/projecttest/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projecttest/script/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projecttest/script/moduleone.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projecttest/script/moduletwo.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learnpromise/other2/index_promise.js" beforeDir="false" afterPath="$PROJECT_DIR$/learnpromise/other2/index_promise.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projecttest/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projecttest/script/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projecttest/script/moduleone.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projecttest/script/moduletwo.js" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -148,6 +149,8 @@
       <workItem from="1569678567918" duration="35695000" />
       <workItem from="1569829142653" duration="5878000" />
       <workItem from="1569858506673" duration="11359000" />
+      <workItem from="1569920363979" duration="451000" />
+      <workItem from="1569920838638" duration="1201000" />
     </task>
     <task id="LOCAL-00001" summary="ewrwe werwe">
       <created>1569681918711</created>

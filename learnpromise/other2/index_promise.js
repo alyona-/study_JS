@@ -19,7 +19,6 @@ const getData = (url) => {
         });
         request.send();
     });
-
 };
 
 const outputPhotos = (data) => {
