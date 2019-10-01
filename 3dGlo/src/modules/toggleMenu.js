@@ -4,7 +4,7 @@ const toggleMenu = () => {
     const handlerMenu = (event) => {
         event.stopPropagation();
         let target = event.target;
-        if (target.closest('.menu') || target.closest('.close-btn')  /*|| target.closest('menu') */
+        if (target.closest('.menu') || target.closest('.close-btn')
         || target.matches('menu li') || target.matches('menu a')
         ) {
             menu.classList.toggle('active-menu');

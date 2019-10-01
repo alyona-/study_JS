@@ -8,13 +8,27 @@ const togglePopup = () => {
     popupBtn.forEach((elem) => {
         elem.addEventListener('click', () => {
             popupContent.style.transform = ``;
-            popup.style.display = 'block';
+            if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+                popup.style.display = 'block';
+            } else {
+                animParam = 'open';
+                animCount = -850;
+                animMaxCount = (0 - popup.clientWidth - popupContent.scrollWidth);
+                popup.style.display = 'block';
+                startAnimate('open');
+            }
         });
     });
 
     let close = () => {
         popupContent.style.transform = ``;
-        popup.style.display = 'none';
+        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent))
+            popup.style.display = 'none';
+        else {
+            animMaxCount = (0 - popupContent.offsetLeft - popupContent.scrollWidth - 50);
+            animParam = 'close';
+            startAnimate('close');
+        }
     };
 
 

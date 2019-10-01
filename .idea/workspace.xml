@@ -5,7 +5,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/3dGlo/dist/main.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/3dGlo/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/3dGlo/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/3dGlo/src/modules/toggleMenu.js" beforeDir="false" afterPath="$PROJECT_DIR$/3dGlo/src/modules/toggleMenu.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/3dGlo/src/modules/togglePopup.js" beforeDir="false" afterPath="$PROJECT_DIR$/3dGlo/src/modules/togglePopup.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -150,7 +150,7 @@
       <workItem from="1569858506673" duration="11359000" />
       <workItem from="1569920363979" duration="451000" />
       <workItem from="1569920838638" duration="2061000" />
-      <workItem from="1569923425071" duration="22799000" />
+      <workItem from="1569923425071" duration="24893000" />
     </task>
     <task id="LOCAL-00001" summary="ewrwe werwe">
       <created>1569681918711</created>
