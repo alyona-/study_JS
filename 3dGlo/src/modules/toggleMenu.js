@@ -8,7 +8,12 @@ const toggleMenu = () => {
         || target.matches('menu li') || target.matches('menu a')
         ) {
             menu.classList.toggle('active-menu');
-        } else if (target.closest('body') && !menu.classList.contains('active-menu')) {
+        }else if (!target.closest('menu') && menu.classList.contains('active-menu')) {
+            if (menu.classList.toggle('active-menu')) {
+                menu.classList.toggle('active-menu');
+            }
+            return false;
+        }else if (target.closest('body') && !menu.classList.contains('active-menu')) {
             if (menu.classList.toggle('active-menu')) {
                 menu.classList.toggle('active-menu');
             }
