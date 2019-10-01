@@ -15,6 +15,9 @@ import sendForm from "./modules/sendForm";
 window.addEventListener('DOMContentLoaded', function () {
 
 
+    'use strict';
+
+
     countTimer();
     toggleMenu();
     togglePopup();
