@@ -21,6 +21,9 @@ const togglePopup = () => {
     });
 
     let close = () => {
+        let form3 = document.getElementById('form3');
+        if(form3.lastElementChild.tagName ==='DIV')
+            form3.lastChild.textContent ="";
         popupContent.style.transform = ``;
         if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent))
             popup.style.display = 'none';
