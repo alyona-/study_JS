@@ -317,7 +317,6 @@ imagesStart();
 
 //Калькулятор
 const calc = (price = 100) => {
-
     const calcBlock = document.querySelector('.calc-block'),
         calcType = document.querySelector('.calc-type'),
         calcSquare = document.querySelector('.calc-square'),
