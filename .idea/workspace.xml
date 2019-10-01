@@ -1,138 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0cf64f3c-1ede-4219-89ed-8ee0d9480e6c" name="Default" comment="ewrwe werwe">
-      <change afterPath="$PROJECT_DIR$/3dGlo/.babelrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/3dGlo/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/3dGlo/src/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/3dGlo/src/modules/calc.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/3dGlo/src/modules/countTimer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/3dGlo/src/modules/imageStart.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/3dGlo/src/modules/sendForm.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/3dGlo/src/modules/slider.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/3dGlo/src/modules/tabs.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/3dGlo/src/modules/toggleMenu.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/3dGlo/src/modules/togglePopup.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/3dGlo/webpack.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/3dGlo/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/3dGlo/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/3dGlo/script/script.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fetch/cars.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fetch/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fetch/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fetch/index2.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learnpromise/3dGlo2/.jshintrc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learnpromise/3dGlo2/css/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learnpromise/3dGlo2/css/style.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learnpromise/3dGlo2/fonts/Roboto-Bold.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learnpromise/3dGlo2/fonts/Roboto-Bold.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learnpromise/3dGlo2/fonts/Roboto-Bold.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learnpromise/3dGlo2/fonts/Roboto-Bold.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learnpromise/3dGlo2/fonts/Roboto-Bold.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learnpromise/3dGlo2/fonts/Roboto-Light.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learnpromise/3dGlo2/fonts/Roboto-Light.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learnpromise/3dGlo2/fonts/Roboto-Light.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learnpromise/3dGlo2/fonts/Roboto-Light.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learnpromise/3dGlo2/fonts/Roboto-Light.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learnpromise/3dGlo2/fonts/Roboto-Medium.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learnpromise/3dGlo2/fonts/Roboto-Medium.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learnpromise/3dGlo2/fonts/Roboto-Medium.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learnpromise/3dGlo2/fonts/Roboto-Medium.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learnpromise/3dGlo2/fonts/Roboto-Medium.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learnpromise/3dGlo2/fonts/Roboto-Regular.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learnpromise/3dGlo2/fonts/Roboto-Regular.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learnpromise/3dGlo2/fonts/Roboto-Regular.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learnpromise/3dGlo2/fonts/Roboto-Regular.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learnpromise/3dGlo2/fonts/Roboto-Regular.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learnpromise/3dGlo2/images/3dglo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learnpromise/3dGlo2/images/calc.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learnpromise/3dGlo2/images/command/command-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learnpromise/3dGlo2/images/command/command-1a.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learnpromise/3dGlo2/images/command/command-2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learnpromise/3dGlo2/images/command/command-2a.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learnpromise/3dGlo2/images/command/command-3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learnpromise/3dGlo2/images/command/command-3a.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learnpromise/3dGlo2/images/command/command-4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learnpromise/3dGlo2/images/command/command-4a.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learnpromise/3dGlo2/images/command/command-5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learnpromise/3dGlo2/images/command/command-5a.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learnpromise/3dGlo2/images/command/command-6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learnpromise/3dGlo2/images/command/command-6a.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learnpromise/3dGlo2/images/command/cov-1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learnpromise/3dGlo2/images/command/cov-2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learnpromise/3dGlo2/images/companies/companies-1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learnpromise/3dGlo2/images/companies/companies-2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learnpromise/3dGlo2/images/companies/companies-3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learnpromise/3dGlo2/images/companies/companies-4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learnpromise/3dGlo2/images/companies/companies-5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learnpromise/3dGlo2/images/companies/companies-6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learnpromise/3dGlo2/images/companies/companies-7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learnpromise/3dGlo2/images/connect/connect-bg.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learnpromise/3dGlo2/images/connect/letter.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learnpromise/3dGlo2/images/connect/phone.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learnpromise/3dGlo2/images/connect/skype.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learnpromise/3dGlo2/images/connect/tele.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learnpromise/3dGlo2/images/connect/whatsapp.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learnpromise/3dGlo2/images/favicon/android-chrome-192x192.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learnpromise/3dGlo2/images/favicon/apple-touch-icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learnpromise/3dGlo2/images/favicon/browserconfig.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learnpromise/3dGlo2/images/favicon/favicon-16x16.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learnpromise/3dGlo2/images/favicon/favicon-32x32.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learnpromise/3dGlo2/images/favicon/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learnpromise/3dGlo2/images/favicon/mstile-150x150.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learnpromise/3dGlo2/images/favicon/safari-pinned-tab.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learnpromise/3dGlo2/images/favicon/site.webmanifest" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learnpromise/3dGlo2/images/footer/academy.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learnpromise/3dGlo2/images/footer/face.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learnpromise/3dGlo2/images/footer/google.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learnpromise/3dGlo2/images/footer/insta.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learnpromise/3dGlo2/images/icons/left-arrow.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learnpromise/3dGlo2/images/icons/right-arrow.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learnpromise/3dGlo2/images/i«u«_2@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learnpromise/3dGlo2/images/main-bg.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learnpromise/3dGlo2/images/menu.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learnpromise/3dGlo2/images/phone.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learnpromise/3dGlo2/images/portfilio/portfolio-01.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learnpromise/3dGlo2/images/portfilio/portfolio-02.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learnpromise/3dGlo2/images/portfilio/portfolio-03.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learnpromise/3dGlo2/images/portfilio/portfolio-04.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learnpromise/3dGlo2/images/portfilio/portfolio-05.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learnpromise/3dGlo2/images/portfilio/portfolio-06.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learnpromise/3dGlo2/images/portfilio/portfolio-07.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learnpromise/3dGlo2/images/portfilio/portfolio-08.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learnpromise/3dGlo2/images/portfilio/portfolio-09.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learnpromise/3dGlo2/images/portfilio/portfolio-10.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learnpromise/3dGlo2/images/scroll.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learnpromise/3dGlo2/images/service/service-1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learnpromise/3dGlo2/images/service/service-2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learnpromise/3dGlo2/images/service/service-3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learnpromise/3dGlo2/images/Лого_2@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learnpromise/3dGlo2/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learnpromise/3dGlo2/robots.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learnpromise/3dGlo2/script/script.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learnpromise/3dGlo2/server.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learnpromise/other/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learnpromise/other/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learnpromise/other1/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learnpromise/other1/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learnpromise/other1/index2.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learnpromise/other1/index3.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learnpromise/other1/promise.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learnpromise/other1/promise2.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learnpromise/other1/promise3.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learnpromise/other1/server.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learnpromise/other2/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learnpromise/other2/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learnpromise/other2/index_promise.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learnpromise/other2/index_promise2.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learnpromise/other2/index_promise3.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learnpromise/other2/index_promise4_promiseAll.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learnpromise/other2/index_promise5_promiseRace.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learnpromise/other2/test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learnpromise/train1/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learnpromise/train1/index1.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" />
-    </list>
+    <list default="true" id="0cf64f3c-1ede-4219-89ed-8ee0d9480e6c" name="Default" comment="ewrwe werwe" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -276,7 +145,7 @@
       <workItem from="1569858506673" duration="11359000" />
       <workItem from="1569920363979" duration="451000" />
       <workItem from="1569920838638" duration="2061000" />
-      <workItem from="1569923425071" duration="20402000" />
+      <workItem from="1569923425071" duration="21110000" />
     </task>
     <task id="LOCAL-00001" summary="ewrwe werwe">
       <created>1569681918711</created>
