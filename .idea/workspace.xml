@@ -1,7 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0cf64f3c-1ede-4219-89ed-8ee0d9480e6c" name="Default" comment="ewrwe werwe" />
+    <list default="true" id="0cf64f3c-1ede-4219-89ed-8ee0d9480e6c" name="Default" comment="ewrwe werwe">
+      <change afterPath="$PROJECT_DIR$/.babelrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/script/testscript.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/module/toggleClub.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/style.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mozaika.html" beforeDir="false" afterPath="$PROJECT_DIR$/mozaika.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/schelkovo.html" beforeDir="false" afterPath="$PROJECT_DIR$/schelkovo.html" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,19 +78,19 @@
     <property name="settings.editor.selected.configurable" value="http.proxy" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\study_JS\perehvat" />
-      <recent name="C:\xampp\htdocs\study_JS\3dGlo" />
-      <recent name="C:\xampp\htdocs\study_JS\3dGlo3" />
-      <recent name="C:\xampp\htdocs\study_JS\3dGlo\src" />
-      <recent name="C:\xampp\htdocs\study_JS\3dGlo2" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\study_JS\ere" />
       <recent name="C:\xampp\htdocs\study_JS\polifils\foreach\src" />
       <recent name="C:\xampp\htdocs\study_JS\test" />
       <recent name="C:\xampp\htdocs\study_JS\fetch" />
       <recent name="C:\xampp\htdocs\study_JS\learnpromise" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\study_JS" />
+      <recent name="C:\xampp\htdocs\study_JS\perehvat" />
+      <recent name="C:\xampp\htdocs\study_JS\3dGlo" />
+      <recent name="C:\xampp\htdocs\study_JS\3dGlo3" />
+      <recent name="C:\xampp\htdocs\study_JS\3dGlo\src" />
     </key>
   </component>
   <component name="RunDashboard">
