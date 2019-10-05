@@ -2,7 +2,33 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0cf64f3c-1ede-4219-89ed-8ee0d9480e6c" name="Default" comment="ewrwe werwe">
+      <change afterPath="$PROJECT_DIR$/.idea/vagrant.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ere/yarn.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/nodelist-foreach-polyfill/CHANGELOG.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/nodelist-foreach-polyfill/LICENSE.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/nodelist-foreach-polyfill/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/nodelist-foreach-polyfill/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/nodelist-foreach-polyfill/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/nodelist-foreach-polyfill/test.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/perehvat/crm1-lanatm.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/perehvat/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/perehvat/pehvat.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/perehvat/server.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/perehvat/testjs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/polifils/foreach/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/polifils/foreach/src/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/dist/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/src/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/src/module/modone.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/src/module/modtwo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/ere/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tasks.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ere/tasks.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -42,12 +68,16 @@
     <auto-save>true</auto-save>
   </component>
   <component name="ProjectId" id="1R5rZ1eNQQkCNQnOGijq25SNZgR" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/3dGlo" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/perehvat" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.prettier" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -62,19 +92,19 @@
     <property name="settings.editor.selected.configurable" value="http.proxy" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\study_JS\fetch" />
-      <recent name="C:\xampp\htdocs\study_JS\learnpromise" />
-      <recent name="C:\xampp\htdocs\study_JS\other" />
-      <recent name="C:\xampp\htdocs\study_JS\3dGlo\script\other" />
-      <recent name="$PROJECT_DIR$/zadanie3" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\study_JS\perehvat" />
       <recent name="C:\xampp\htdocs\study_JS\3dGlo" />
       <recent name="C:\xampp\htdocs\study_JS\3dGlo3" />
       <recent name="C:\xampp\htdocs\study_JS\3dGlo\src" />
       <recent name="C:\xampp\htdocs\study_JS\3dGlo2" />
-      <recent name="C:\xampp\htdocs\study_JS\projectthree" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\study_JS\ere" />
+      <recent name="C:\xampp\htdocs\study_JS\polifils\foreach\src" />
+      <recent name="C:\xampp\htdocs\study_JS\test" />
+      <recent name="C:\xampp\htdocs\study_JS\fetch" />
+      <recent name="C:\xampp\htdocs\study_JS\learnpromise" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -179,6 +209,7 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="ewrwe werwe" />
     <option name="LAST_COMMIT_MESSAGE" value="ewrwe werwe" />
   </component>
