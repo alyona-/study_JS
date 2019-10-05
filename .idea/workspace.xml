@@ -1,35 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0cf64f3c-1ede-4219-89ed-8ee0d9480e6c" name="Default" comment="ewrwe werwe">
-      <change afterPath="$PROJECT_DIR$/.idea/vagrant.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ere/yarn.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/nodelist-foreach-polyfill/CHANGELOG.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/nodelist-foreach-polyfill/LICENSE.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/nodelist-foreach-polyfill/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/nodelist-foreach-polyfill/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/nodelist-foreach-polyfill/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/nodelist-foreach-polyfill/test.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/perehvat/crm1-lanatm.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/perehvat/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/perehvat/pehvat.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/perehvat/server.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/perehvat/testjs.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/polifils/foreach/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/polifils/foreach/src/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/dist/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/src/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/src/module/modone.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/src/module/modtwo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/ere/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tasks.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ere/tasks.txt" afterDir="false" />
-    </list>
+    <list default="true" id="0cf64f3c-1ede-4219-89ed-8ee0d9480e6c" name="Default" comment="ewrwe werwe" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
