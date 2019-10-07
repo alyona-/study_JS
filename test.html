@@ -1,0 +1,939 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN"
+        "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru" version="XHTML+RDFa 1.0" dir="ltr"
+      xmlns:content="http://purl.org/rss/1.0/modules/content/"
+      xmlns:dc="http://purl.org/dc/terms/"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/"
+      xmlns:og="http://ogp.me/ns#"
+      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xmlns:sioc="http://rdfs.org/sioc/ns#"
+      xmlns:sioct="http://rdfs.org/sioc/types#"
+      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+      xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+
+<head profile="http://www.w3.org/1999/xhtml/vocab">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link rel="shortcut icon" href="https://eppc.rncb.ru/misc/favicon.ico" type="image/vnd.microsoft.icon"/>
+    <meta name="Generator" content="Drupal 7 (http://drupal.org)"/>
+    <title>Отчетность MobilPay | РНКБ Единый портал Процессингового Центра </title>
+    <style type="text/css" media="all">
+        @import url("https://eppc.rncb.ru/modules/system/system.base.css?pyu5nu");
+        @import url("https://eppc.rncb.ru/modules/system/system.menus.css?pyu5nu");
+        @import url("https://eppc.rncb.ru/modules/system/system.messages.css?pyu5nu");
+        @import url("https://eppc.rncb.ru/modules/system/system.theme.css?pyu5nu");
+    </style>
+    <style type="text/css" media="all">
+        @import url("https://eppc.rncb.ru/sites/all/modules/ldap/ldap_user/ldap_user.css?pyu5nu");
+        @import url("https://eppc.rncb.ru/modules/comment/comment.css?pyu5nu");
+        @import url("https://eppc.rncb.ru/sites/all/modules/date/date_api/date.css?pyu5nu");
+        @import url("https://eppc.rncb.ru/sites/all/modules/date/date_popup/themes/datepicker.1.7.css?pyu5nu");
+        @import url("https://eppc.rncb.ru/sites/all/modules/epec_payroll_iss/epec_payroll_iss.css?pyu5nu");
+        @import url("https://eppc.rncb.ru/modules/field/theme/field.css?pyu5nu");
+        @import url("https://eppc.rncb.ru/modules/node/node.css?pyu5nu");
+        @import url("https://eppc.rncb.ru/modules/search/search.css?pyu5nu");
+        @import url("https://eppc.rncb.ru/modules/user/user.css?pyu5nu");
+        @import url("https://eppc.rncb.ru/sites/all/modules/views/css/views.css?pyu5nu");
+    </style>
+    <style type="text/css" media="all">
+        @import url("https://eppc.rncb.ru/sites/all/modules/ctools/css/ctools.css?pyu5nu");
+        @import url("https://eppc.rncb.ru/sites/all/modules/dhtml_menu/dhtml_menu.css?pyu5nu");
+        @import url("https://eppc.rncb.ru/sites/all/modules/epec_card_details/epec_card_details.css?pyu5nu");
+        @import url("https://eppc.rncb.ru/sites/all/modules/epec_c_reiss/epec_c_reiss.css?pyu5nu");
+        @import url("https://eppc.rncb.ru/sites/all/modules/epec_iss_acts/epec_iss_acts.css?pyu5nu");
+        @import url("https://eppc.rncb.ru/sites/all/modules/epec_pc_report_rncb/epec_pc_report.css?pyu5nu");
+        @import url("https://eppc.rncb.ru/sites/all/modules/epec_set_limit_ui/epec.css?pyu5nu");
+        @import url("https://eppc.rncb.ru/sites/all/modules/ldap/ldap_help/ldap_help.css?pyu5nu");
+        @import url("https://eppc.rncb.ru/sites/all/modules/modal_forms/css/modal_forms_popup.css?pyu5nu");
+        @import url("https://eppc.rncb.ru/sites/all/modules/panels/css/panels.css?pyu5nu");
+    </style>
+    <style type="text/css" media="all">
+        @import url("https://eppc.rncb.ru/themes/bartik/css/layout.css?pyu5nu");
+        @import url("https://eppc.rncb.ru/themes/bartik/css/slide_menu.css?pyu5nu");
+        @import url("https://eppc.rncb.ru/themes/bartik/css/style.css?pyu5nu");
+        @import url("https://eppc.rncb.ru/sites/default/files/color/bartik-215c0390/colors.css?pyu5nu");
+        @import url("https://eppc.rncb.ru/themes/bartik/../../sites/all/modules/jquery_update/replace/ui/themes/base/minified/jquery.ui.core.min.css?pyu5nu");
+        @import url("https://eppc.rncb.ru/themes/bartik/../../sites/all/modules/jquery_update/replace/ui/themes/base/minified/jquery.ui.theme.min.css?pyu5nu");
+        @import url("https://eppc.rncb.ru/themes/bartik/../../modules/overlay/overlay-parent.css?pyu5nu");
+        @import url("https://eppc.rncb.ru/themes/bartik/../../modules/contextual/contextual.css?pyu5nu");
+        @import url("https://eppc.rncb.ru/themes/bartik/../../sites/all/modules/ctools/css/modal.css?pyu5nu");
+        @import url("https://eppc.rncb.ru/themes/bartik/../../sites/all/modules/get_form_id/get_form_id.css?pyu5nu");
+        @import url("https://eppc.rncb.ru/themes/bartik/../../modules/shortcut/shortcut.css?pyu5nu");
+        @import url("https://eppc.rncb.ru/themes/bartik/../../modules/toolbar/toolbar.css?pyu5nu");
+        @import url("https://eppc.rncb.ru/themes/bartik/../../misc/ui/jquery.ui.core.css?pyu5nu");
+        @import url("https://eppc.rncb.ru/themes/bartik/../../misc/ui/jquery.ui.theme.css?pyu5nu");
+    </style>
+    <style type="text/css" media="print">
+        @import url("https://eppc.rncb.ru/themes/bartik/css/print.css?pyu5nu");
+    </style>
+
+    <!--[if lte IE 7]>
+    <link type="text/css" rel="stylesheet" href="https://eppc.rncb.ru/themes/bartik/css/ie.css?pyu5nu" media="all"/>
+    <![endif]-->
+
+    <!--[if IE 6]>
+    <link type="text/css" rel="stylesheet" href="https://eppc.rncb.ru/themes/bartik/css/ie6.css?pyu5nu" media="all"/>
+    <![endif]-->
+    <script type="text/javascript"
+            src="https://eppc.rncb.ru/sites/all/modules/jquery_update/replace/jquery/1.7/jquery.min.js?v=1.7.2"></script>
+    <script type="text/javascript" src="https://eppc.rncb.ru/misc/jquery.once.js?v=1.2"></script>
+    <script type="text/javascript" src="https://eppc.rncb.ru/misc/drupal.js?pyu5nu"></script>
+    <script type="text/javascript"
+            src="https://eppc.rncb.ru/sites/all/modules/jquery_update/replace/ui/ui/minified/jquery.ui.core.min.js?v=1.10.2"></script>
+    <script type="text/javascript"
+            src="https://eppc.rncb.ru/sites/all/modules/jquery_update/replace/ui/external/jquery.cookie.js?v=67fb34f6a866c40d0570"></script>
+    <script type="text/javascript"
+            src="https://eppc.rncb.ru/sites/all/modules/jquery_update/replace/misc/jquery.form.min.js?v=2.69"></script>
+    <script type="text/javascript" src="https://eppc.rncb.ru/misc/ajax.js?v=7.41"></script>
+    <script type="text/javascript"
+            src="https://eppc.rncb.ru/sites/all/modules/jquery_update/js/jquery_update.js?v=0.0.1"></script>
+    <script type="text/javascript"
+            src="https://eppc.rncb.ru/sites/default/files/languages/ru_csgFkKRWg7b_HP_vynFITLKK0qinnERnGhUQn6_QwSI.js?pyu5nu"></script>
+    <script type="text/javascript"
+            src="https://eppc.rncb.ru/sites/all/modules/dhtml_menu/dhtml_menu.js?pyu5nu"></script>
+    <script type="text/javascript" src="https://eppc.rncb.ru/misc/progress.js?v=7.41"></script>
+    <script type="text/javascript" src="https://eppc.rncb.ru/sites/all/modules/ctools/js/modal.js?pyu5nu"></script>
+    <script type="text/javascript"
+            src="https://eppc.rncb.ru/sites/all/modules/modal_forms/js/modal_forms_popup.js?pyu5nu"></script>
+    <script type="text/javascript" src="https://eppc.rncb.ru/themes/bartik/js/slide_menu.js?pyu5nu"></script>
+    <script type="text/javascript" src="https://eppc.rncb.ru/themes/bartik/js/cookie.min.js?pyu5nu"></script>
+    <script type="text/javascript"
+            src="https://eppc.rncb.ru/themes/bartik/../../sites/all/modules/ctools/js/modal.js?pyu5nu"></script>
+    <script type="text/javascript"
+            src="https://eppc.rncb.ru/themes/bartik/../../modules/toolbar/toolbar.js?pyu5nu"></script>
+    <script type="text/javascript"
+            src="https://eppc.rncb.ru/themes/bartik/../../sites/all/modules/get_form_id/get_form_id.js?pyu5nu"></script>
+    <script type="text/javascript"
+            src="https://eppc.rncb.ru/themes/bartik/../../sites/all/modules/devel/devel_krumo_path.js?pyu5nu"></script>
+    <script type="text/javascript"
+            src="https://eppc.rncb.ru/themes/bartik/../../modules/contextual/contextual.js?pyu5nu"></script>
+    <script type="text/javascript"
+            src="https://eppc.rncb.ru/themes/bartik/../../sites/all/modules/jquery_update/replace/ui/ui/minified/jquery.ui.core.min.js?pyu5nu"></script>
+    <script type="text/javascript" src="https://eppc.rncb.ru/themes/bartik/../../misc/jquery.ba-bbq.js?pyu5nu"></script>
+    <script type="text/javascript"
+            src="https://eppc.rncb.ru/themes/bartik/../../modules/overlay/overlay-parent.js?pyu5nu"></script>
+    <script type="text/javascript"
+            src="https://eppc.rncb.ru/themes/bartik/../../sites/all/modules/jquery_update/replace/ui/external/jquery.cookie.js?pyu5nu"></script>
+    <script type="text/javascript"
+            src="https://eppc.rncb.ru/themes/bartik/../../sites/all/modules/jquery_update/replace/misc/jquery.form.min.js?pyu5nu"></script>
+    <script type="text/javascript"
+            src="https://eppc.rncb.ru/themes/bartik/../../sites/all/modules/jquery_update/replace/misc/jquery.form.js?pyu5nu"></script>
+    <script type="text/javascript" src="https://eppc.rncb.ru/themes/bartik/../../misc/tableheader.js?pyu5nu"></script>
+    <script type="text/javascript" src="https://eppc.rncb.ru/themes/bartik/../../misc/progress.js?pyu5nu"></script>
+    <script type="text/javascript" src="https://eppc.rncb.ru/themes/bartik/../../misc/ajax.js?pyu5nu"></script>
+    <script type="text/javascript"
+            src="https://eppc.rncb.ru/themes/bartik/../../sites/all/modules/jquery_update/js/jquery_update.js?pyu5nu"></script>
+    <script type="text/javascript"
+            src="https://eppc.rncb.ru/themes/bartik/../../misc/ui/jquery.ui.core.min.js?pyu5nu"></script>
+    <script type="text/javascript">
+        <!--//--><![CDATA[//><!--
+        jQuery.extend(Drupal.settings, {
+            "basePath": "\/",
+            "pathPrefix": "",
+            "ajaxPageState": {
+                "theme": "bartik",
+                "theme_token": "STQT9JBeeIVNhGe5jCwgi2oQxIxPiJyFnTNoZI7MldI",
+                "jquery_version": "1.7",
+                "js": {
+                    "sites\/all\/modules\/jquery_update\/replace\/jquery\/1.7\/jquery.min.js": 1,
+                    "misc\/jquery.once.js": 1,
+                    "misc\/drupal.js": 1,
+                    "sites\/all\/modules\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.core.min.js": 1,
+                    "sites\/all\/modules\/jquery_update\/replace\/ui\/external\/jquery.cookie.js": 1,
+                    "sites\/all\/modules\/jquery_update\/replace\/misc\/jquery.form.min.js": 1,
+                    "misc\/ajax.js": 1,
+                    "sites\/all\/modules\/jquery_update\/js\/jquery_update.js": 1,
+                    "public:\/\/languages\/ru_csgFkKRWg7b_HP_vynFITLKK0qinnERnGhUQn6_QwSI.js": 1,
+                    "sites\/all\/modules\/dhtml_menu\/dhtml_menu.js": 1,
+                    "misc\/progress.js": 1,
+                    "sites\/all\/modules\/ctools\/js\/modal.js": 1,
+                    "sites\/all\/modules\/modal_forms\/js\/modal_forms_popup.js": 1,
+                    "themes\/bartik\/js\/slide_menu.js": 1,
+                    "themes\/bartik\/js\/cookie.min.js": 1,
+                    "themes\/bartik\/..\/..\/sites\/all\/modules\/ctools\/js\/modal.js": 1,
+                    "themes\/bartik\/..\/..\/modules\/toolbar\/toolbar.js": 1,
+                    "themes\/bartik\/..\/..\/sites\/all\/modules\/get_form_id\/get_form_id.js": 1,
+                    "themes\/bartik\/..\/..\/sites\/all\/modules\/devel\/devel_krumo_path.js": 1,
+                    "themes\/bartik\/..\/..\/modules\/contextual\/contextual.js": 1,
+                    "themes\/bartik\/..\/..\/sites\/all\/modules\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.core.min.js": 1,
+                    "themes\/bartik\/..\/..\/misc\/jquery.ba-bbq.js": 1,
+                    "themes\/bartik\/..\/..\/modules\/overlay\/overlay-parent.js": 1,
+                    "themes\/bartik\/..\/..\/sites\/all\/modules\/jquery_update\/replace\/ui\/external\/jquery.cookie.js": 1,
+                    "themes\/bartik\/..\/..\/sites\/all\/modules\/jquery_update\/replace\/misc\/jquery.form.min.js": 1,
+                    "themes\/bartik\/..\/..\/sites\/all\/modules\/jquery_update\/replace\/misc\/jquery.form.js": 1,
+                    "themes\/bartik\/..\/..\/misc\/tableheader.js": 1,
+                    "themes\/bartik\/..\/..\/misc\/progress.js": 1,
+                    "themes\/bartik\/..\/..\/misc\/ajax.js": 1,
+                    "themes\/bartik\/..\/..\/sites\/all\/modules\/jquery_update\/js\/jquery_update.js": 1,
+                    "themes\/bartik\/..\/..\/misc\/ui\/jquery.ui.core.min.js": 1
+                },
+                "css": {
+                    "modules\/system\/system.base.css": 1,
+                    "modules\/system\/system.menus.css": 1,
+                    "modules\/system\/system.messages.css": 1,
+                    "modules\/system\/system.theme.css": 1,
+                    "misc\/ui\/jquery.ui.core.css": 1,
+                    "misc\/ui\/jquery.ui.theme.css": 1,
+                    "sites\/all\/modules\/ldap\/ldap_user\/ldap_user.css": 1,
+                    "modules\/comment\/comment.css": 1,
+                    "sites\/all\/modules\/date\/date_api\/date.css": 1,
+                    "sites\/all\/modules\/date\/date_popup\/themes\/datepicker.1.7.css": 1,
+                    "sites\/all\/modules\/epec_payroll_iss\/epec_payroll_iss.css": 1,
+                    "modules\/field\/theme\/field.css": 1,
+                    "modules\/node\/node.css": 1,
+                    "modules\/search\/search.css": 1,
+                    "modules\/user\/user.css": 1,
+                    "sites\/all\/modules\/views\/css\/views.css": 1,
+                    "sites\/all\/modules\/ctools\/css\/ctools.css": 1,
+                    "sites\/all\/modules\/dhtml_menu\/dhtml_menu.css": 1,
+                    "sites\/all\/modules\/epec_card_details\/epec_card_details.css": 1,
+                    "sites\/all\/modules\/epec_c_reiss\/epec_c_reiss.css": 1,
+                    "sites\/all\/modules\/epec_iss_acts\/epec_iss_acts.css": 1,
+                    "sites\/all\/modules\/epec_pc_report_rncb\/epec_pc_report.css": 1,
+                    "sites\/all\/modules\/epec_set_limit_ui\/epec.css": 1,
+                    "sites\/all\/modules\/ldap\/ldap_help\/ldap_help.css": 1,
+                    "sites\/all\/modules\/ctools\/css\/modal.css": 1,
+                    "sites\/all\/modules\/modal_forms\/css\/modal_forms_popup.css": 1,
+                    "sites\/all\/modules\/panels\/css\/panels.css": 1,
+                    "themes\/bartik\/css\/layout.css": 1,
+                    "themes\/bartik\/css\/slide_menu.css": 1,
+                    "themes\/bartik\/css\/style.css": 1,
+                    "themes\/bartik\/css\/colors.css": 1,
+                    "themes\/bartik\/..\/..\/sites\/all\/modules\/jquery_update\/replace\/ui\/themes\/base\/minified\/jquery.ui.core.min.css": 1,
+                    "themes\/bartik\/..\/..\/sites\/all\/modules\/jquery_update\/replace\/ui\/themes\/base\/minified\/jquery.ui.theme.min.css": 1,
+                    "themes\/bartik\/..\/..\/modules\/overlay\/overlay-parent.css": 1,
+                    "themes\/bartik\/..\/..\/modules\/contextual\/contextual.css": 1,
+                    "themes\/bartik\/..\/..\/sites\/all\/modules\/ctools\/css\/modal.css": 1,
+                    "themes\/bartik\/..\/..\/sites\/all\/modules\/get_form_id\/get_form_id.css": 1,
+                    "themes\/bartik\/..\/..\/modules\/shortcut\/shortcut.css": 1,
+                    "themes\/bartik\/..\/..\/modules\/toolbar\/toolbar.css": 1,
+                    "themes\/bartik\/..\/..\/misc\/ui\/jquery.ui.core.css": 1,
+                    "themes\/bartik\/..\/..\/misc\/ui\/jquery.ui.theme.css": 1,
+                    "themes\/bartik\/css\/print.css": 1,
+                    "themes\/bartik\/css\/ie.css": 1,
+                    "themes\/bartik\/css\/ie6.css": 1
+                }
+            },
+            "acquiring-rncb-modal": {
+                "modalSize": {"type": "fixed", "width": 300, "height": 200},
+                "animation": "fadeIn"
+            },
+            "dhtmlMenu": {
+                "nav": "open",
+                "animation": {"effects": {"height": "height", "opacity": "opacity"}, "speed": 500},
+                "effects": {"siblings": "close-same-tree", "children": "none", "remember": 0},
+                "filter": {"type": "blacklist", "list": []}
+            },
+            "CToolsModal": {
+                "loadingText": "Loading...",
+                "closeText": "Close Window",
+                "closeImage": "\u003Cimg typeof=\u0022foaf:Image\u0022 src=\u0022https:\/\/eppc.rncb.ru\/sites\/all\/modules\/ctools\/images\/icon-close-window.png\u0022 alt=\u0022Close window\u0022 title=\u0022Close window\u0022 \/\u003E",
+                "throbber": "\u003Cimg typeof=\u0022foaf:Image\u0022 src=\u0022https:\/\/eppc.rncb.ru\/sites\/all\/modules\/ctools\/images\/throbber.gif\u0022 alt=\u0022\u0417\u0430\u0433\u0440\u0443\u0437\u043a\u0430\u0022 title=\u0022Loading...\u0022 \/\u003E"
+            },
+            "modal-popup-small": {
+                "modalSize": {"type": "fixed", "width": 300, "height": 300},
+                "modalOptions": {"opacity": 0.85, "background": "#000"},
+                "animation": "fadeIn",
+                "modalTheme": "ModalFormsPopup",
+                "throbber": "\u003Cimg typeof=\u0022foaf:Image\u0022 src=\u0022https:\/\/eppc.rncb.ru\/sites\/all\/modules\/modal_forms\/images\/loading_animation.gif\u0022 alt=\u0022Loading...\u0022 title=\u0022\u0417\u0430\u0433\u0440\u0443\u0437\u043a\u0430\u0022 \/\u003E",
+                "closeText": "Close"
+            },
+            "modal-popup-medium": {
+                "modalSize": {"type": "fixed", "width": 550, "height": 450},
+                "modalOptions": {"opacity": 0.85, "background": "#000"},
+                "animation": "fadeIn",
+                "modalTheme": "ModalFormsPopup",
+                "throbber": "\u003Cimg typeof=\u0022foaf:Image\u0022 src=\u0022https:\/\/eppc.rncb.ru\/sites\/all\/modules\/modal_forms\/images\/loading_animation.gif\u0022 alt=\u0022Loading...\u0022 title=\u0022\u0417\u0430\u0433\u0440\u0443\u0437\u043a\u0430\u0022 \/\u003E",
+                "closeText": "Close"
+            },
+            "modal-popup-large": {
+                "modalSize": {"type": "scale", "width": 0.8, "height": 0.8},
+                "modalOptions": {"opacity": 0.85, "background": "#000"},
+                "animation": "fadeIn",
+                "modalTheme": "ModalFormsPopup",
+                "throbber": "\u003Cimg typeof=\u0022foaf:Image\u0022 src=\u0022https:\/\/eppc.rncb.ru\/sites\/all\/modules\/modal_forms\/images\/loading_animation.gif\u0022 alt=\u0022Loading...\u0022 title=\u0022\u0417\u0430\u0433\u0440\u0443\u0437\u043a\u0430\u0022 \/\u003E",
+                "closeText": "Close"
+            },
+            "urlIsAjaxTrusted": {"\/?q=epec_mpay_reports": true}
+        });
+        //--><!]]>
+    </script>
+</head>
+<body class="html not-front logged-in one-sidebar sidebar-first page-epec-mpay-reports">
+<div id="skip-link">
+    <a href="#main-content" class="element-invisible element-focusable">Перейти к основному содержанию</a>
+</div>
+<div id="page-wrapper">
+    <div id="page">
+
+        <div id="header" class="with-secondary-menu">
+            <div class="section clearfix">
+
+                <a href="/" title="Главная" rel="home" id="logo">
+                    <img src="https://eppc.rncb.ru/sites/default/files/logo.png" alt="Главная"/>
+                </a>
+
+                <div id="name-and-slogan">
+
+                    <div id="site-name">
+                        <strong>
+                            <a href="/" title="Главная"
+                               rel="home"><span>РНКБ Единый портал Процессингового Центра </span></a>
+                        </strong>
+                    </div>
+
+
+                </div> <!-- /#name-and-slogan -->
+
+                <div class="region region-header">
+                    <div id="block-block-7" class="block block-block">
+
+
+                        <div class="content">
+                            Подключенная БД: CPROC
+                        </div>
+                    </div>
+                </div>
+
+
+                <div id="secondary-menu" class="navigation">
+                    <h2 class="element-invisible">Вторичное меню</h2>
+                    <ul id="secondary-menu-links" class="links inline clearfix">
+                        <li class="menu-2 first"><a href="/?q=user">Моя учётная запись</a></li>
+                        <li class="menu-15 last"><a href="/?q=user/logout">Выйти</a></li>
+                    </ul>
+                </div> <!-- /#secondary-menu -->
+
+            </div>
+        </div> <!-- /.section, /#header -->
+
+
+        <div id="main-wrapper" class="clearfix">
+
+            <div id="breadcrumb"><h2 class="element-invisible">Вы здесь</h2>
+                <div class="breadcrumb"><a href="/">Главная</a></div>
+            </div>
+
+            <div class="container hidden-until-ready open-sidebar logged">
+                <div id="sidebar">
+                    <div id="sidebar-first" class="column sidebar">
+                        <div class="section">
+                            <div class="region region-sidebar-first">
+                                <div id="block-system-navigation" class="block block-system block-menu">
+
+                                    <h2>Навигация</h2>
+
+                                    <div class="content">
+                                        <ul class="menu clearfix">
+                                            <li class="first collapsed dhtml-menu collapsed start-collapsed"
+                                                id="dhtml_menu-652"><a href="/?q=epec_incass_card_rncb">БЛОКИРОВКА
+                                                КАРТ</a>
+                                                <ul class="menu clearfix">
+                                                    <li class="first last leaf dhtml-menu" id="dhtml_menu-653"><a
+                                                            href="/?q=epec_incass_card_rncb/blockcard">Блокировка карт
+                                                        инкассаторов</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="collapsed dhtml-menu collapsed start-collapsed"
+                                                id="dhtml_menu-777"><a href="/?q=epec_oper_support">Группа ежедневных
+                                                операций</a>
+                                                <ul class="menu clearfix">
+                                                    <li class="first leaf dhtml-menu" id="dhtml_menu-778"><a
+                                                            href="/?q=epec_oper_support/report_docs">Отчеты по созданным
+                                                        документам</a></li>
+                                                    <li class="leaf dhtml-menu" id="dhtml_menu-779"><a
+                                                            href="/?q=epec_oper_support/create_docs">Создание
+                                                        документов</a></li>
+                                                    <li class="last leaf dhtml-menu" id="dhtml_menu-798"><a
+                                                            href="/?q=epec_oper_support/start_event">Старт событий</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="leaf dhtml-menu" id="dhtml_menu-768"><a
+                                                    href="/?q=epec_card_details">Детализация движений по карте</a></li>
+                                            <li class="collapsed dhtml-menu collapsed start-collapsed"
+                                                id="dhtml_menu-770"><a href="/?q=epec_w_clients">Закрытие дублей
+                                                клиентов</a>
+                                                <ul class="menu clearfix">
+                                                    <li class="first leaf dhtml-menu" id="dhtml_menu-772"><a
+                                                            href="/?q=epec_w_clients/login">Логин к WAY4</a></li>
+                                                    <li class="leaf dhtml-menu" id="dhtml_menu-773"><a
+                                                            href="/?q=epec_w_clients/new">Новые дубликаты</a></li>
+                                                    <li class="leaf dhtml-menu" id="dhtml_menu-771"><a
+                                                            href="/?q=epec_w_clients/work">В работе</a></li>
+                                                    <li class="last leaf dhtml-menu" id="dhtml_menu-774"><a
+                                                            href="/?q=epec_w_clients/journal">Протокол</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="collapsed dhtml-menu collapsed start-collapsed"
+                                                id="dhtml_menu-749"><a href="/?q=aquaring_keys">Ключи криптографии
+                                                УС</a>
+                                                <ul class="menu clearfix">
+                                                    <li class="first leaf dhtml-menu" id="dhtml_menu-750"><a
+                                                            href="/?q=aquaring_keys/journal">LOG загрузки ключей</a>
+                                                    </li>
+                                                    <li class="last leaf dhtml-menu" id="dhtml_menu-751"><a
+                                                            href="/?q=aquaring_keys/way4">Ключи в WAY4</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="leaf active-trail dhtml-menu" id="dhtml_menu-655"><a
+                                                    href="/?q=epec_mpay_reports" class="active-trail active">Отчетность
+                                                MobilPay</a></li>
+                                            <li class="collapsed dhtml-menu collapsed start-collapsed"
+                                                id="dhtml_menu-690"><a href="/?q=report_module">Отчетность ПЦ</a>
+                                                <ul class="menu clearfix">
+                                                    <li class="first expanded dhtml-menu collapsed start-collapsed"
+                                                        id="dhtml_menu-691"><a
+                                                            href="/?q=report_module/admin">Админка</a>
+                                                        <ul class="menu clearfix">
+                                                            <li class="first last leaf dhtml-menu" id="dhtml_menu-693">
+                                                                <a href="/?q=report_module/admin/new_report">Новый
+                                                                    отчет</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="collapsed dhtml-menu collapsed start-collapsed"
+                                                        id="dhtml_menu-692"><a href="/?q=report_module/order_report">Заказать
+                                                        отчет</a></li>
+                                                    <li class="leaf dhtml-menu" id="dhtml_menu-775"><a
+                                                            href="/?q=report_module/epec_repeat_contr_way4">Отчет
+                                                        несоответствия Way4</a></li>
+                                                    <li class="last leaf dhtml-menu" id="dhtml_menu-776"><a
+                                                            href="/?q=report_module/epec_repeat_contracts_mbank">Отчет
+                                                        несоответствия Мбанк-Way4</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="leaf dhtml-menu" id="dhtml_menu-744"><a
+                                                    href="/?q=epec_loyalty_nspc">Программа лояльности НСПК</a></li>
+                                            <li class="collapsed dhtml-menu collapsed start-collapsed"
+                                                id="dhtml_menu-745"><a href="/?q=epec_cash_limit">Расчет допустимого
+                                                лимита по карте</a></li>
+                                            <li class="leaf dhtml-menu" id="dhtml_menu-797"><a
+                                                    href="/?q=epec_result_match">Сверка итогов по устройствам</a></li>
+                                            <li class="leaf dhtml-menu" id="dhtml_menu-748"><a
+                                                    href="/?q=epec_service_ow">Сервисные функции ПЦ</a></li>
+                                            <li class="collapsed dhtml-menu collapsed start-collapsed"
+                                                id="dhtml_menu-713"><a href="/?q=epec_set_limit_ui">Увеличение лимитов
+                                                по кредитным картам</a></li>
+                                            <li class="collapsed dhtml-menu collapsed start-collapsed"
+                                                id="dhtml_menu-792"><a href="/?q=epec_task_pm">Формирование заданий для
+                                                печати карт</a>
+                                                <ul class="menu clearfix">
+                                                    <li class="first leaf dhtml-menu" id="dhtml_menu-795"><a
+                                                            href="/?q=epec_task_pm/new">Новое</a></li>
+                                                    <li class="leaf dhtml-menu" id="dhtml_menu-794"><a
+                                                            href="/?q=epec_task_pm/tasks">Задания</a></li>
+                                                    <li class="last leaf dhtml-menu" id="dhtml_menu-793"><a
+                                                            href="/?q=epec_task_pm/done">Выполненные</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="last leaf dhtml-menu" id="dhtml_menu-752"><a
+                                                    href="/?q=sms_monitor">Очередь смс по потокам </a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!-- /.section, /#sidebar-first -->
+                </div>
+                <div class="main-content">
+                    <div id="menu-icon">
+                        <a href="#" data-toggle=".container" id="sidebar-toggle" data-tooltip="Это меню можно скрыть!">
+                            <span id="tooltip"></span>
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                        </a>
+                    </div>
+                </div>
+
+                <div id="content" class="column">
+                    <div class="section">
+                        <a id="main-content"></a>
+                        <h1 class="title" id="page-title">
+                            Отчетность MobilPay </h1>
+                        <div class="tabs">
+                        </div>
+                        <div class="region region-content">
+                            <div id="block-system-main" class="block block-system">
+
+
+                                <div class="content">
+                                    <form action="/?q=epec_mpay_reports" method="post" id="epec-mpay-reports-form"
+                                          accept-charset="UTF-8">
+                                        <div>
+                                            <body>
+                                            <style type="text/css">              tr td {
+                                                border: 0px solid;
+                                                border-bottom: 1px solid #274c34;
+                                                border-top: 1px solid #274c34;
+                                                vertical-align: top;
+                                                text-align: justify;
+                                                background: white !important;
+                                                width: 50%;
+                                            }
+
+                                            tr th {
+                                                padding: 0;
+                                                border: 0px solid;
+                                                border-bottom: 1px solid #274c34;
+                                                border-top: 1px solid #274c34;
+                                                background: white !important;
+                                                color: black !important;
+                                                text-align: center;
+                                            }
+
+                                            .tds {
+                                                vertical-align: middle;
+                                                text-align: center;
+                                            }          </style>
+                                            <div id="giverootmp">
+                                                <form action="http://crm1-lanatm:9090/WebApplication8/HelloServlet"
+                                                      class="mp_form"><br><input type="hidden" name="time" min="0"
+                                                                                 max="90" value="0" size="2">
+                                                    <input type="hidden" value="Сформировать"></form>
+                                                <table border="0" cellspacing="0" cellpadding="15" width="100%"
+                                                       height="130">
+                                                    <form action="http://crm1-lanatm:9090/WebApplication8/HelloServlet"
+                                                          data-ldap="EPEC_WebReport_ITM" class="mp_form">
+                                                        <tr>
+                                                            <th colspan="2">Отчет по инцидентам</th>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>В данном отчете реализован вывод данных о всех
+                                                                инцидентах сформированных в "Управлении Инцидентами"
+                                                                системы MobilPay. <br>Данный отчет формируется за
+                                                                промежуток не больше 90 дней.<br> <br>Не стоит в
+                                                                почтовой рассылке<br> <br>Доступен для группы
+                                                                Epec_WebReport_ITM в Active Directory<br></td>
+                                                            <td width="50%" class="tds">Введите промежуток дней:
+                                                                <input
+                                                                    type="number" name="time" min="0" max="90" value="0"
+                                                                    size="2"> для формирования отчета <br><br><input
+                                                                    type="submit" value="Сформировать"></td>
+                                                        </tr>
+                                                    </form>
+                                                    <form action="http://crm1-lanatm:9090/WebApplication8/HelloServlet2"
+                                                          data-ldap="EPEC_WebReport_ITM" class="mp_form">
+                                                        <tr>
+                                                            <th colspan="2">Отчет по открытым задачам</th>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>В данном отчете реализован вывод данных о всех открытых
+                                                                задачах по инцидентам, в "Управлении Инцидентами"
+                                                                системы MobilPay. <br>Отчет актуален только на момент
+                                                                выгрузки. <br> <br>Отчет состоит в почтовой рассылке.
+                                                                <br>Каждый день, 2 раза в день ~в 8:20 и ~в 17:20 <br>
+                                                                <br>Группа рассылки: <br>Омелькина Алёна Павловна; Хабиб
+                                                                Александр Михайлович; Малышев Владимир Анатольевич;
+                                                                Сытник Николай Александрович; Широколов Андрей
+                                                                Евгеньевич; Сорокатый Александр Викторович; Акимов
+                                                                Евгений Александрович; Пятницкий Дмитрий Сергеевич;
+                                                                Ждановских Андрей Михайлович <br><br>Доступен для группы
+                                                                Epec_WebReport_ITM в Active Directory<br></td>
+                                                            <td width="50%" class="tds">Нажмите кнопку для получения
+                                                                отчета <br><br><input type="submit" value="Выгрузить">
+                                                            </td>
+                                                        </tr>
+                                                    </form>
+                                                    <form action="http://crm1-lanatm:9090/WebApplication8/HelloServlet3"
+                                                          data-ldap="EPEC_WebReport_CassetCounter" class="mp_form">
+                                                        <tr>
+                                                            <th colspan="2">Отчет по акутальным счетчикам и суммам</th>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>В данном отчете реализован вывод данных о финансовом
+                                                                состоянии УС до управлением ПО MobilPay. Данные
+                                                                представлены как в виде моментального среза остатка, так
+                                                                и суммы по типам транзакций за период от 00:00 текущих
+                                                                суток до момента выгрузки. <br>Отчет актуален только на
+                                                                момент выгрузки. <br> <br>Отчет состоит в почтовой
+                                                                рассылке. <br>Каждый день ~в 00:02, за период с 00:00 до
+                                                                23:59 прошлого дня.<br> <br>Группа рассылки: <br>Омелькина
+                                                                Алёна Павловна; Горшков Сергей Олегович; Костышин
+                                                                Александр Михайлович; Абрамкин Лаврентий Сергеевич;
+                                                                Хабиб Александр Михайлович; Малышев Владимир
+                                                                Анатольевич; Лозенко Татьяна Леонтьевна; Бохан Светлана
+                                                                Витальевна <br><br>Доступен для группы
+                                                                Epec_WebReport_CassetCounter в Active Directory<br></td>
+                                                            <td width="50%" class="tds">Нажмите кнопку для получения
+                                                                отчета <br><br><input type="submit" value="Выгрузить">
+                                                            </td>
+                                                        </tr>
+                                                    </form>
+                                                    <script type="text/javascript">                  var datefield = document.createElement("input")
+                                                    datefield.setAttribute("type", "date")
+                                                    if (datefield.type != "date") {
+                                                        document.write('<link href="css/jquery-ui.css" rel="stylesheet" type="text/css" />\n')
+                                                        document.write('<script src="js/jquery.min.js"><\/script>\n')
+                                                        document.write('<script src="js/jquery-ui.min.js"><\/script>\n')
+                                                    }              </script>
+                                                    <form action="http://crm1-lanatm:9090/WebApplication8/HelloServlet4"
+                                                          data-ldap="EPEC_WebReport_ITM" class="mp_form">
+                                                        <tr>
+                                                            <th colspan="2">Отчет по рабочему времени</th>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>В данном отчете реализован вывод данных о работе
+                                                                пользователей со всеми инцидентами сформированными в
+                                                                "Управлении Инцидентами" системы MobilPay. <br>Лимита
+                                                                промежутка отчетного периода нет. <br> <br>Не стоит в
+                                                                почтовой рассылке <br><br>Доступен для группы
+                                                                Epec_WebReport_ITM в Active Directory<br></td>
+                                                            <td width="50%" class="tds">Введите дату с <input
+                                                                    type="date" name="time" id="birthday"> по <input
+                                                                    type="date" name="time1" id="birthday1"> для
+                                                                формирования отчета <br><br><input type="submit"
+                                                                                                   value="Сформировать">
+                                                            </td>
+                                                        </tr>
+                                                    </form>
+                                                    <form action="http://crm1-lanatm:9090/WebApplication8/HelloServlet5"
+                                                          data-ldap="EPEC_WebReport_CassetCounter" class="mp_form">
+                                                        <tr>
+                                                            <th colspan="2">Отчет по счетчикам за месяц</th>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>В данном отчете реализован вывод данных о инкассационных
+                                                                циклах УС в системе MobilPay.<br> Отчет за период
+                                                                текущего месяца актуален только на момент
+                                                                выгрузки.<br><br> Не стоит в почтовой рассылке <br><br>Доступен
+                                                                для группы EPEC_WebReport_CassetCounter в Active
+                                                                Directory<br></td>
+                                                            <td width="50%" class="tds">Выберите месяц: <select
+                                                                    name="months">
+                                                                <option disabled>Выберите месяц</option>
+                                                                <option value="01">Январь</option>
+                                                                <option value="02">Февраль</option>
+                                                                <option value="03">Март</option>
+                                                                <option value="04">Апрель</option>
+                                                                <option value="05">Май</option>
+                                                                <option value="06">Июнь</option>
+                                                                <option value="07">Июль</option>
+                                                                <option value="08">Август</option>
+                                                                <option value="09">Сентябрь</option>
+                                                                <option value="10">Октябрь</option>
+                                                                <option value="11">Ноябрь</option>
+                                                                <option value="12">Декабрь</option>
+                                                            </select> год <select name="year_sum">
+                                                                <option value="2016">2016</option>
+                                                                <option value="2017">2017</option>
+                                                                <option vaule="2018">2018</option>
+                                                                <option vaule="2019" selected="selected">2019</option>
+                                                            </select> для формирования отчета <br><br><input
+                                                                    type="submit" value="Сформировать"></td>
+                                                        </tr>
+                                                    </form>
+                                                    <form action="http://crm1-lanatm:9090/WebApplication8/WorkServlet13"
+                                                          data-ldap="EPEC_WebReport_ITM" class="mp_form">
+                                                        <tr>
+                                                            <th colspan="2">Отчет по просроченным задачам СК</th>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>В данном отчете реализован вывод данных о всех открытых
+                                                                задачах по инцидентам, в "Управлении Инцидентами"
+                                                                системы MobilPay <br> Отчет актуален только на момент
+                                                                загрузки<br><br> Не стоит в почтовой рассылке <br><br>Доступен
+                                                                для группы Epec_WebReport_ITM в Active Directory<br>
+                                                            </td>
+                                                            <td width="50%" class="tds"><br><br>Нажмите кнопку для
+                                                                получения отчета <br><br><input type="submit"
+                                                                                                value="Сформировать">
+                                                            </td>
+                                                        </tr>
+                                                    </form>
+                                                    <form action="http://crm1-lanatm:9090/WebApplication8/HelloServlet7"
+                                                          data-ldap="EPEC_WebReport_ITM" class="mp_form">
+                                                        <tr>
+                                                            <th colspan="2">История событий устройств</th>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>В данном отчете реализован вывод данных о транзакциях
+                                                                устройств.<br> Отчет формируется за три последующие даты
+                                                                с момента выбранной даты.<br><br> Не стоит в почтовой
+                                                                рассылке <br><br>Доступен для группы Epec_WebReport_ITM
+                                                                в Active Directory<br></td>
+                                                            <td width="50%" class="tds">Введите дату с <input
+                                                                    type="date" name="time2" id="birthday2"> для
+                                                                формирования отчета <br><br><input type="submit"
+                                                                                                   value="Сформировать">
+                                                            </td>
+                                                        </tr>
+                                                    </form>
+                                                    <form action="http://crm1-lanatm:9090/WebApplication8/HelloServlet8"
+                                                          data-ldap="EPEC_WebReport_ITM" class="mp_form">
+                                                        <tr>
+                                                            <th colspan="2">Изменение состояния устройства версия 2</th>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>В данном отчете реализован вывод данных о транзакциях
+                                                                устройств.<br> Отчет формируется за три последующие даты
+                                                                с момента выбранной даты.<br><br> Не стоит в почтовой
+                                                                рассылке <br><br>Доступен для группы Epec_WebReport_ITM
+                                                                в Active Directory<br></td>
+                                                            <td width="50%" class="tds">Введите дату с <input
+                                                                    type="date" name="time20" id="birthday3"> для
+                                                                формирования отчета <br><br><input type="submit"
+                                                                                                   value="Сформировать">
+                                                            </td>
+                                                        </tr>
+                                                    </form><!--Финансовый данные о обороте на УС версия 2-->
+                                                    <form action="http://crm1-lanatm:9090/WebApplication8/ServletOtchetFinOborot"
+                                                          data-ldap="EPEC_WebReport_CassetCounter" class="mp_form">
+                                                        <tr>
+                                                            <th colspan="2">Финансовые данные о обороте на УС</th>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>В данном отчете выведена информация финансовых данных о
+                                                                обороте на УС <br>Отчет формируется за месяц.<br><br> Не
+                                                                стоит в почтовой рассылке <br><br>Доступен для группы
+                                                                EPEC_WebReport_CassetCounter в Active Directory<br></td>
+                                                            <td width="50%" class="tds">
+                                                                <table class="table_alyona">
+                                                                    <tr>
+                                                                        <td>Месяц:</td>
+                                                                        <td>Год:</td>
+                                                                        <td>Подразделение:</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td><select name="time2">
+                                                                            <option disabled>Выберите месяц</option>
+                                                                            <option value="0" selected="selected">
+                                                                                Январь
+                                                                            </option>
+                                                                            <option value="1">Февраль</option>
+                                                                            <option value="2">Март</option>
+                                                                            <option value="3">Апрель</option>
+                                                                            <option value="4">Май</option>
+                                                                            <option value="5">Июнь</option>
+                                                                            <option value="6">Июль</option>
+                                                                            <option value="7">Август</option>
+                                                                            <option value="8">Сентябрь</option>
+                                                                            <option value="9">Октябрь</option>
+                                                                            <option value="10">Ноябрь</option>
+                                                                            <option value="11">Декабрь</option>
+                                                                        </select></td>
+                                                                        <td><select name="year">
+                                                                            <option disabled>Выберите год</option>
+                                                                            <option value="2019" selected="selected">
+                                                                                2019
+                                                                            </option>
+                                                                            <option value="2018">2018</option>
+                                                                            <option value="2017">2017</option>
+                                                                            <option value="2016">2016</option>
+                                                                        </select></td>
+                                                                        <td><select id="depart" name="depart1"
+                                                                                    style="width: 200px;">
+                                                                            <option id="all" value="0"
+                                                                                    selected="selected">По всем
+                                                                                подразделениям
+                                                                            </option>
+                                                                            <option id="simf" value="1">Симферопольская
+                                                                                БГ
+                                                                            </option>
+                                                                            <option id="sev" value="2">Севастопольская
+                                                                                БГ
+                                                                            </option>
+                                                                            <option id="evp" value="8">Евпаторийская
+                                                                                БГ
+                                                                            </option>
+                                                                            <option id="dga" value="9">Джанкойская БГ
+                                                                            </option>
+                                                                            <option id="yalta" value="10">Ялтинская БГ
+                                                                            </option>
+                                                                            <option id="kerch" value="11">Керченская
+                                                                                БГ
+                                                                            </option>
+                                                                        </select></td>
+                                                                    </tr>
+                                                                </table>
+                                                                <br> <input type="submit" value="Сформировать"></td>
+                                                        </tr>
+                                                    </form>
+                                                    <form action="http://crm1-lanatm:9090/WebApplication8/MidnightCount14"
+                                                          data-ldap="EPEC_WebReport_CassetCounter" class="mp_form">
+                                                        <tr>
+                                                            <th colspan="2">Отчет по счетчикам в полночь</th>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>В данном отчете выведена информация финансовых данных о
+                                                                обороте на УС <br>Отчет формируется за месяц.<br><br> Не
+                                                                стоит в почтовой рассылке <br><br>Доступен для группы
+                                                                EPEC_WebReport_CassetCounter в Active Directory<br></td>
+                                                            <td width="50%" class="tds">
+                                                                <table class="table_alyona" width="50%"
+                                                                       style="margin: 0 auto;">
+                                                                    <tr>
+                                                                        <td width="50%">Месяц:</td>
+                                                                        <td>Год:</td>
+                                                                        <td></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td width="50%"><select name="timeMidnight">
+                                                                            <option disabled>Выберите месяц</option>
+                                                                            <option value="1">Январь</option>
+                                                                            <option value="2">Февраль</option>
+                                                                            <option value="3">Март</option>
+                                                                            <option value="4">Апрель</option>
+                                                                            <option value="5">Май</option>
+                                                                            <option value="6">Июнь</option>
+                                                                            <option value="7">Июль</option>
+                                                                            <option value="8">Август</option>
+                                                                            <option value="9">Сентябрь</option>
+                                                                            <option value="10">Октябрь</option>
+                                                                            <option value="11">Ноябрь</option>
+                                                                            <option value="12">Декабрь</option>
+                                                                        </select></td>
+                                                                        <td><select name="yearMidnigth">
+                                                                            <option disabled>Выберите год</option>
+                                                                            <option value="2019" selected="selected">
+                                                                                2019
+                                                                            </option>
+                                                                            <option value="2018">2018</option>
+                                                                            <option value="2017">2017</option>
+                                                                            <option value="2016">2016</option>
+                                                                        </select></td>
+                                                                        <td></td>
+                                                                    </tr>
+                                                                </table>
+                                                                <br> <input type="submit" value="Сформировать"
+                                                                            width="50%"></td>
+                                                        </tr>
+                                                    </form>
+                                                    <form action="http://crm1-lanatm:9090/WebApplication8/SumMidnightDownload"
+                                                          data-ldap="EPEC_WebReport_CassetCounter" class="mp_form">
+                                                        <tr>
+                                                            <th colspan="2">Отчет по счетчикам выдачи</th>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>В данном отчете реализован вывод данных о всех
+                                                                проинкасированных устройствах за текущий день с 00:00
+                                                                текущего дня по момент выгрузки отчета. <br>Отчет
+                                                                актуален только на момент выгрузки. <br> <br>Отчет
+                                                                состоит в почтовой рассылке. <br>Каждый день, 1 раза в
+                                                                день ~в 00:05 <br> <br>Группа рассылки: <br>Омелькина
+                                                                Алёна Павловна; Бохан Светлана Витальевна; Малышев
+                                                                Владимир Анатольевич; Хабиб Александр Михайлович;
+                                                                <br><br>Доступен для группы EPEC_WebReport_CassetCounter
+                                                                в Active Directory<br></td>
+                                                            <td width="50%" class="tds">Нажмите кнопку для получения
+                                                                отчета <br><br><input type="submit" value="Выгрузить">
+                                                            </td>
+                                                        </tr>
+                                                    </form>
+                                                    <form action="http://crm1-lanatm:9090/WebApplication8/ServletIncidents"
+                                                          data-ldap="EPEC_WebReport_CassetCounter" class="mp_form">
+                                                        <tr>
+                                                            <th colspan="2">Отчет по инцидентам</th>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>В данном отчете реализован вывод данных о всех
+                                                                инцидентах из системы "Управления Инцидентами" MobilPay.
+                                                                <br>Отчет актуален только на момент выгрузки. Данные для
+                                                                отчета обновляются каждый час. <br> <br>Отчет не состоит
+                                                                в почтовой рассылке. <br> <br> <br><br>Доступен для
+                                                                группы EPEC_WebReport_CassetCounter в Active
+                                                                Directory<br></td>
+                                                            <td width="50%" class="tds">Нажмите кнопку для получения
+                                                                отчета <br><br><input type="submit" value="Выгрузить">
+                                                            </td>
+                                                        </tr>
+                                                    </form>
+                                                    <form action="http://crm1-lanatm:9090/WebApplication8/ServletOtchetPoZadachamRNCB"
+                                                          data-ldap="EPEC_WebReport_ITM" class="mp_form">
+                                                        <tr>
+                                                            <th colspan="2">Отчет по задачам</th>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>В данном отчете реализован вывод данных о всех задачах
+                                                                из системы MobilPay. <br>Отчет актуален только на момент
+                                                                выгрузки. Данные для отчета обновляются каждый час. <br>
+                                                                <br>Отчет состоит в почтовой рассылке. <br> <br> <br>Группа
+                                                                рассылки: <br>Омелькина Алёна Павловна; Хабиб Александр
+                                                                Михайлович; Сытник Николай Александрович; Широколов
+                                                                Андрей Евгеньевич; Сорокатый Александр Викторович;
+                                                                Акимов Евгений Александрович; Пятницкий Дмитрий
+                                                                Сергеевич; Ждановских Андрей Михайлович <br><br>Доступен
+                                                                для группы EPEC_WebReport_CassetCounter в Active
+                                                                Directory<br></td>
+                                                            <td width="50%" class="tds">Нажмите кнопку для получения
+                                                                отчета <br><br><input type="submit" value="Выгрузить">
+                                                            </td>
+                                                        </tr>
+                                                    </form>
+                                                    <script>                  if (datefield.type != "date") {
+                                                        jQuery(function ($) {
+                                                            $('#birthday').datepicker({dateFormat: 'yy-mm-dd'});
+                                                            $('#birthday1').datepicker({dateFormat: 'yy-mm-dd'});
+                                                            $('#birthday2').datepicker({dateFormat: 'yy-mm-dd'});
+                                                            $('#birthday3').datepicker({dateFormat: 'yy-mm-dd'});
+                                                        })
+                                                    }                  </script>
+                                                </table>
+                                            </div>
+                                            </body>
+                                            <input type="hidden" name="form_build_id"
+                                                   value="form-3hPQiIh4HG4qqfD6-S2vTET681LFGlf1dSNpnqrc3ZQ"/>
+                                            <input type="hidden" name="form_token"
+                                                   value="MAkPWsldwqYhE22JLMFnyr5z-oiPdFtaeTeM_YIH1nU"/>
+                                            <input type="hidden" name="form_id" value="epec_mpay_reports_form"/>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- /.section, /#content -->
+            </div>
+
+
+            <!-- </div> --> </div> <!-- /#main, /#main-wrapper -->
+
+
+        <div id="footer-wrapper">
+            <div class="section">
+
+
+                <div id="footer" class="clearfix">
+                    <div class="region region-footer">
+                        <div id="block-block-1" class="block block-block">
+
+                            <h2>© 2015-2019 RNCB Bank (PJSC)</h2>
+
+                            <div class="content">
+                                <p>Разработчик: <a href="mailto:KolesovAV@rncb.ru">Колесов Андрей</a><br/>
+                                    Администратор: <a href="mailto:SobolenkoSP@rncb.ru">Соболенко Сергей</a></p>
+                            </div>
+                        </div>
+                        <div id="block-user-online" class="block block-user">
+
+                            <h2>Сейчас на сайте</h2>
+
+                            <div class="content">
+                                <p>Пользователей онлайн: 4. </p>
+                                <div class="item-list">
+                                    <ul>
+                                        <li class="first"><span class="username" xml:lang="" about="/?q=user/75"
+                                                                typeof="sioc:UserAccount" property="foaf:name"
+                                                                datatype="">Омелькина Алёна...</span></li>
+                                        <li><span class="username" xml:lang="" about="/?q=user/178"
+                                                  typeof="sioc:UserAccount" property="foaf:name" datatype="">Довгаль Ольга В...</span>
+                                        </li>
+                                        <li><span class="username" xml:lang="" about="/?q=user/86"
+                                                  typeof="sioc:UserAccount" property="foaf:name" datatype="">Горунов Евгений...</span>
+                                        </li>
+                                        <li class="last"><span class="username" xml:lang="" about="/?q=user/138"
+                                                               typeof="sioc:UserAccount" property="foaf:name"
+                                                               datatype="">Качурин Петр Ви...</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- /#footer -->
+
+            </div>
+        </div> <!-- /.section, /#footer-wrapper -->
+
+    </div>
+</div> <!-- /#page, /#page-wrapper -->
+</body>
+</html>

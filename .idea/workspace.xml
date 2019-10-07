@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0cf64f3c-1ede-4219-89ed-8ee0d9480e6c" name="Default" comment="ewrwe werwe">
+      <change afterPath="$PROJECT_DIR$/test.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -10,25 +12,11 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="DatabaseView">
-    <option name="SHOW_INTERMEDIATE" value="true" />
-    <option name="GROUP_DATA_SOURCES" value="true" />
-    <option name="GROUP_SCHEMA" value="true" />
-    <option name="GROUP_CONTENTS" value="false" />
-    <option name="SORT_POSITIONED" value="false" />
-    <option name="SHOW_EMPTY_GROUPS" value="false" />
-    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
-    <option name="HIDDEN_KINDS">
-      <set />
-    </option>
-    <expand />
-    <select />
-  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -46,12 +34,11 @@
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="PropertiesComponent">
-    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/page" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/3dGlo4" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.prettier" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -63,22 +50,18 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="http.proxy" />
+    <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\study_JS\page" />
-      <recent name="C:\xampp\htdocs\study_JS" />
-      <recent name="C:\xampp\htdocs\study_JS\perehvat" />
-      <recent name="C:\xampp\htdocs\study_JS\3dGlo" />
-      <recent name="C:\xampp\htdocs\study_JS\3dGlo3" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\study_JS\ere" />
-      <recent name="C:\xampp\htdocs\study_JS\polifils\foreach\src" />
-      <recent name="C:\xampp\htdocs\study_JS\test" />
-      <recent name="C:\xampp\htdocs\study_JS\fetch" />
-      <recent name="C:\xampp\htdocs\study_JS\learnpromise" />
+      <recent name="$PROJECT_DIR$/zadanie3" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\study_JS\3dGlo4" />
+      <recent name="C:\xampp\htdocs\study_JS\3dGlo3" />
+      <recent name="C:\xampp\htdocs\study_JS\3dGlo2" />
+      <recent name="C:\xampp\htdocs\study_JS" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -93,48 +76,11 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Node.js.index.js (1)">
-    <configuration name="index.js (1)" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/req/index.js" working-dir="$PROJECT_DIR$/req">
-      <method v="2" />
-    </configuration>
-    <configuration name="index.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/learnpromise/other/index.js" working-dir="$PROJECT_DIR$/learnpromise/other">
-      <method v="2" />
-    </configuration>
-    <configuration name="t2.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/test2/t2.js" working-dir="$PROJECT_DIR$/test2">
-      <method v="2" />
-    </configuration>
-    <configuration name="t3.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/test2/t3.js" working-dir="$PROJECT_DIR$/test2">
-      <method v="2" />
-    </configuration>
-    <configuration name="t4.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/test2/t4.js" working-dir="$PROJECT_DIR$/test2">
-      <method v="2" />
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Node.js.index.js (1)" />
-        <item itemvalue="Node.js.index.js" />
-        <item itemvalue="Node.js.t4.js" />
-        <item itemvalue="Node.js.t3.js" />
-        <item itemvalue="Node.js.t2.js" />
-      </list>
-    </recent_temporary>
-  </component>
-  <component name="ServiceViewManager">
-    <option name="allServicesViewState">
-      <serviceView>
-        <treeState>
-          <expand />
-          <select />
-        </treeState>
-      </serviceView>
-    </option>
-  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="0cf64f3c-1ede-4219-89ed-8ee0d9480e6c" name="Default" comment="" />
       <created>1568317842496</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -142,28 +88,7 @@
       <workItem from="1568317844902" duration="7519000" />
       <workItem from="1568651742662" duration="5170000" />
       <workItem from="1568967874562" duration="20807000" />
-      <workItem from="1569174241395" duration="16588000" />
-      <workItem from="1569236688057" duration="1103000" />
-      <workItem from="1569419746084" duration="14653000" />
-      <workItem from="1569493969837" duration="4480000" />
-      <workItem from="1569678567918" duration="35695000" />
-      <workItem from="1569829142653" duration="5878000" />
-      <workItem from="1569858506673" duration="11359000" />
-      <workItem from="1569920363979" duration="451000" />
-      <workItem from="1569920838638" duration="2061000" />
-      <workItem from="1569923425071" duration="28626000" />
-      <workItem from="1570085229765" duration="2179000" />
-      <workItem from="1570105749691" duration="45000" />
-      <workItem from="1570106785667" duration="1000000" />
     </task>
-    <task id="LOCAL-00001" summary="ewrwe werwe">
-      <created>1569681918711</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1569681918711</updated>
-    </task>
-    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -181,26 +106,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="ewrwe werwe" />
-    <option name="LAST_COMMIT_MESSAGE" value="ewrwe werwe" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/3dGlo3/script/script.js</url>
-          <line>4</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/3dGlo3/script/script.js</url>
-          <line>68</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
