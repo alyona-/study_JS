@@ -1,0 +1,5 @@
+const burderMenu = () => {
+
+};
+
+burgerMenu();
