@@ -15,6 +15,7 @@ import calcClub from "./module/calcClub";
 
 window.addEventListener('DOMContentLoaded', function () {
     toggleClub();
+    modalPresent();
     handlingInput();
     calcClub();
 });
