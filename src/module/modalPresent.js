@@ -27,4 +27,3 @@ const modalPresent = () => {
 };
 
 export default modalPresent;
-//modalPresent();
