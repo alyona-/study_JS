@@ -1,24 +1,74 @@
 const sendModal = () => {
     const errorMessage = 'Что-то пошло не так...',
         loadMessage = 'Загрузка...',
-        successMessage = 'Спасибо! \n Мы скоро с вами свяжемся!',
-        statusMessage = document.createElement('div');
-    statusMessage.style.cssText = 'font-size: 2rem; color:#fff; text-align: center;';
-    let tmpForm;
+        successMessage = 'Спасибо!  Мы скоро с вами свяжемся!',
+        statusMessage = document.createElement('div'),
+        cssForm1 = 'font-size: 2rem; color:#fff; text-align: center; ',
+        cssForm2 ='font-size: 2rem; color:#fff; text-align: center; position: absolute; top:35%;';
+ //   statusMessage.style.cssText = 'font-size: 2rem; color:#fff; text-align: center; position: absolute; top:35%;';
 
 
-    const postData = (formData) => {
+    const cleanForms = (target)=> {
+
+            if(target.closest("#footer_form") ) {
+                thanks(target);
+            } else if(target.closest("#banner_form")){
+                while (target.children.length > 0) {
+                    target.removeChild(target.lastChild);
+                }
+            }else{
+                while (target.children.length > 1) {
+                    target.removeChild(target.lastChild);
+                }
+            }
+         //   target.reset();
+
+    };
+
+    const getStyleForm = (target) => {
+        if((target.closest("#form1") || (target.closest("#form2"))))
+            statusMessage.style.cssText = cssForm2;
+        else statusMessage.style.cssText = cssForm1;
+    };
+
+    const getStyleLoadForm = (target) => {
+       statusMessage.style.cssText = cssForm1;
+    };
+
+    const postData = (target) => {
+        getStyleLoadForm(target);
+        statusMessage.textContent = loadMessage;
+         target.appendChild(statusMessage);
+
         return fetch('./server.php', {
             method: 'POST'
-            , body: formData
+            , body: new FormData(target)
         })
             .then((response) => {
                 if (response.status !== 200) {
                     throw new Error('status network not 200');
                 }
+                getStyleForm(target);
                 statusMessage.textContent = successMessage;
-            }).catch(() => {
-                statusMessage.textContent = errorMessage
+                target.dataset.send =true;
+                cleanForms(target);
+                alert(target);
+                if(!target.closest('#footer_form')) {
+                    target.appendChild(statusMessage);
+                    alert("не футер добавить");
+                }else{
+                    target.removeChild(target.lastElementChild);
+                    alert("футер удалить");
+                }
+
+
+            })
+           .catch(() => {
+               getStyleForm(target);
+               statusMessage.textContent = errorMessage;
+               cleanForms(target);
+               target.appendChild(statusMessage);
+
             })
     };
 
@@ -37,32 +87,27 @@ const sendModal = () => {
         event.preventDefault();
         let target = event.target;
 
-        const formData = new FormData(target);
-        postData(formData);
-        target.reset();
-        let parent = target.parentNode;
-        let tmpForm = target;
 
 
-        if(target.closest("#footer_form") ) {
-            // while (target.children.length > 0) {
-            //     target.removeChild(target.lastChild);
-            // }
-            thanks(target);
-        } else{
-            while (target.children.length > 1) {
-                target.removeChild(target.lastChild);
+        postData(target);
+
+      /*  if(target.hasAttribute("data-send")) {
+            if(target.closest("#footer_form") ) {
+                thanks(target);
+            } else{
+                while (target.children.length > 1) {
+                    target.removeChild(target.lastChild);
+                }
             }
-            target.appendChild(statusMessage);
-            target.dataset.send =true;
-        }
 
-
+        } */
+        target.reset();
 
     };
 
     const thanks =(target) =>{
         document.querySelector("#thanks").style.display="block";
+        target.dataset.send =true;
     };
 
 
